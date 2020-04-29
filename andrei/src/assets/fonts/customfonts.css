@@ -1,0 +1,10 @@
+@font-face {
+    font-family: AndroidAssassin;
+    src: url("/assets/fonts/AndroidAssassin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: AndroidAssassin;
+    font-weight: italic;
+    src: url("/assets/fonts/AndroidAssassinItalic.ttf") format("truetype");
+}
