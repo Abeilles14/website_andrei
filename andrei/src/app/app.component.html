@@ -1,6 +1,6 @@
-<mat-toolbar class="bg-nav">
-    <mat-toolbar-row>
-        <span class="flexExpand" style="color:white">ANDREI</span>
+<mat-toolbar class="bg-nav fixed-top">
+    <mat-toolbar-row class="flexSpace">
+        <span style="color:white">ANDREI</span>
         <div fxShow="true" fxHide.lt-md>
             <!-- The following menu items will be hidden on both SM and XS screen sizes -->
             <ul class="nav flex=column">
@@ -10,18 +10,22 @@
             </ul>
         </div>
         <!-- displays sidenav button when screen small-->
-        <span class="flexExpand"></span>
-        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
-            <mat-icon class="menu-icon">menu</mat-icon>
-        </button>
+        <div fxShow="true" fxHide.gt-sm>
+            <button mat-icon-button (click)="sidenav.toggle()" *ngIf="true">
+                <mat-icon aria-label="Side nav toggle icon" class="menu-icon" *ngIf="!sidenav.opened; else showCross">menu</mat-icon>
+                <ng-template #showCross>
+                        <mat-icon aria-label="Side nav toggle icon" class="menu-icon">close</mat-icon>
+                </ng-template>
+            </button>  
+        </div>
     </mat-toolbar-row>
 </mat-toolbar>
 
 <!-- side nav toggle-->
-<mat-sidenav-container fxFlexFill>
+<mat-sidenav-container fxFlexFill class="fixed-top">
     <mat-sidenav #sidenav class="bg-nav" position="end">
-        <mat-nav-list>
-            <mat-icon class="menu-icon" (click)="sidenav.toggle()" href="" mat-list-item>close</mat-icon>
+        <mat-nav-list class="flexSpace">
+
             <ul *ngFor="let navItem of navItems">
                 <button type="button" class="toolbarbtn" (click)="navTo(navItem)">{{navItem.name}}</button>
             </ul>

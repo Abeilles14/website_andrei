@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit{
   title = 'andrei';
+  //icon = 'menu';
+
   navItems: Array<any> = [
     {
       name: 'About',
@@ -30,6 +33,14 @@ export class AppComponent implements OnInit{
       rout: '/other'
     }
   ]
+
+  // changeIcon(){
+  //   if(this.icon == 'menu'){
+  //     this.icon = 'close';
+  //   } else {
+  //     this.icon = 'menu';
+  //   }
+  // }
 
   constructor(private router: Router){ }
 
