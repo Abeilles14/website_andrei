@@ -18,7 +18,7 @@ export class AppComponent implements OnInit{
       rout: '/projects'
     },
     {
-      name: 'Documents',
+      name: 'Files',
       rout: '/documents'
     },
     {

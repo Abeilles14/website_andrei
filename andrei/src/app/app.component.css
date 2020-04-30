@@ -13,6 +13,25 @@
     outline: none;
 }
 
+.menu-icon {
+    color: white;
+}
+.menu-icon:hover {
+    color:rgba(255, 255, 255, 0.7)
+}
+
+.flexExpand {
+    flex: 1 1 auto;
+}
+
+.flexSpaceBetween {
+    justify-content: space-between;
+}
+
+.bg-nav {
+    background-color: rgba(40, 40, 40, 0.9);
+}
+
 .toolbarlogo {
     font-family: cursive;
 }
