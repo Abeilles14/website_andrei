@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
   intro = {
     title: 'Isabelle Andre',
-    subtitle: 'Electrical Engineering Student',
+    subtitle: '3rd Year Electrical Engineering Student',
     content: 'University of British Columbia',
-    image: 'assets/images/about_bkg.jpg'
+    image: 'assets/images/about_bkg1.jpg'
   };
 
   constructor() { }
