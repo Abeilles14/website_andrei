@@ -1,17 +1,38 @@
 #bg {
-    position: fixed; 
-    top: -50%; 
-    left: -50%; 
-    width: 200%; 
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
     height: 200%;
-  }
-  #bg img {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    margin: auto; 
+}
+
+#bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     min-width: 50%;
     min-height: 50%;
-  }
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    background-color: rgba(40, 40, 40, 0.3);
+    color: whitesmoke;
+}
+
+.text-block {
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
