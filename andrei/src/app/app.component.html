@@ -12,22 +12,24 @@
         <!-- displays sidenav button when screen small-->
         <div fxShow="true" fxHide.gt-sm>
             <button mat-icon-button (click)="sidenav.toggle()" *ngIf="true">
-                <mat-icon aria-label="Side nav toggle icon" class="menu-icon" *ngIf="!sidenav.opened; else showCross">menu</mat-icon>
+                <mat-icon aria-label="Side nav toggle icon" class="menu-icon" *ngIf="!sidenav.opened; else showCross">
+                    menu</mat-icon>
                 <ng-template #showCross>
-                        <mat-icon aria-label="Side nav toggle icon" class="menu-icon">close</mat-icon>
+                    <mat-icon aria-label="Side nav toggle icon" class="menu-icon">close</mat-icon>
                 </ng-template>
-            </button>  
+            </button>
         </div>
     </mat-toolbar-row>
 </mat-toolbar>
 
 <!-- side nav toggle-->
 <mat-sidenav-container fxFlexFill class="fixed-top">
-    <mat-sidenav #sidenav class="bg-nav" position="end">
-        <mat-nav-list class="flexSpace">
-
+    <mat-sidenav style="width: 260px;" #sidenav class="bg-nav" position="end">
+        <ul>.</ul>
+        <ul>.</ul>
+        <mat-nav-list class="sidebar">
             <ul *ngFor="let navItem of navItems">
-                <button type="button" class="toolbarbtn" (click)="navTo(navItem)">{{navItem.name}}</button>
+                <button type="button" class="sidebarbtn" (click)="navTo(navItem)">{{navItem.name}}</button>
             </ul>
         </mat-nav-list>
     </mat-sidenav>
