@@ -1,3 +1,9 @@
+.logo {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  color: whitesmoke;
+}
+
 .toolbarbtn {
   padding: 0 6px 0 6px;
   margin: 6px 16px 6px 16px;
@@ -26,12 +32,12 @@
 /* Active/current link */
 
 .toolbar li.active {
-  background-color: #93C0CA;
+  background-color: #bdcce1;
   color: white;
 }
 
 .toolbar li:hover:not(.active) {
-  background-color: #93C0CA;
+  background-color: #bdcce1;
   color: white;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -109,12 +115,12 @@
 /* Active/current link */
 
 .sidebar ul.active {
-  background-color: #93C0CA;
+  background-color: #bdcce1;
   color: white;
 }
 
 .sidebar ul:hover:not(.active) {
-  background-color: #93C0CA;
+  background-color: #bdcce1;
   color: white;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);

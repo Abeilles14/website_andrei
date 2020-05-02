@@ -10,7 +10,7 @@ export class AboutComponent implements OnInit {
     title: 'Isabelle Andre',
     subtitle: '3rd Year Electrical Engineering Student',
     content: 'University of British Columbia',
-    image: 'assets/images/about_bkg1.jpg'
+    image: 'assets/images/about_bkg6.jpg'
   };
 
   constructor() { }
