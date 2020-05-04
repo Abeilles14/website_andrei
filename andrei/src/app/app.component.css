@@ -131,3 +131,12 @@
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
 }
+
+footer {
+  float: bottom;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  height: 250px;
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -6,16 +7,59 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  intro = {
-    title: 'Isabelle Andre',
-    subtitle: '3rd Year Electrical Engineering Student',
-    content: 'University of British Columbia',
-    image: 'assets/images/about_bkg6.jpg'
-  };
+  navIndex: Array<any> = [
+    {
+      name: 'About',
+      rout: '/about'
+    },
+    {
+      name: 'Projects',
+      rout: '/projects'
+    },
+    {
+      name: 'Archives',
+      rout: '/documents'
+    },
+    {
+      name: 'Resume',
+      rout: '/resume'
+    },
+    {
+      name: 'Other',
+      rout: '/other'
+    }
+  ]
 
-  constructor() { }
+  navItems: Array<any> = [
+    {
+      name: 'About',
+      rout: '/about'
+    },
+    {
+      name: 'Projects',
+      rout: '/projects'
+    },
+    {
+      name: 'Archives',
+      rout: '/documents'
+    },
+    {
+      name: 'Resume',
+      rout: '/resume'
+    },
+    {
+      name: 'Other',
+      rout: '/other'
+    }
+  ]
+
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  navTo(page) {
+    this.router.navigate([page.rout]);
+  }
 }

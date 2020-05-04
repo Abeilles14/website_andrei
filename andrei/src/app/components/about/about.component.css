@@ -10,12 +10,6 @@
     background-size: cover;
 }
 
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-}
-
 .titles {
     text-align: center;
     top: 50%;
@@ -71,10 +65,15 @@
 
 .about-block {
     height: 650px;
+    width: 100%;
 }
 
 .about-block section {
-    margin: 80px 250px 250px 250px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 100%;
+    /* padding-left: 250px;
+    padding-right: 250px; */
 }
 
 .page-title {
@@ -86,18 +85,94 @@
     margin-bottom: 50px;
 }
 
-.about-text * {
-    float: left;
+.about-text h1, h3, p {
     font-family: 'Dosis', sans-serif;
-    width: 700px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.about-text img {
+.container img {
     float: right;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    width: 30%;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.container h1, hr, h3, p {
+    float: left;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    /* max-width: 650px; */
+}
+
+@media screen and (max-width: 1205px) {
+    .container h1, hr, h3, p {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .container img {
+        float: middle;
+        vertical-align: center;
+        width: 70%;
+        margin-bottom: 30px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .container h1, hr, h3, p {
+        float: bottom;
+        vertical-align: middle;
+        text-align: center;
+        width: 100%;
+    }
+    .about-block {
+        height: 1000px;
+    }
+}
+
+/* .separarator {
+    float: bottom;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+   position:absolute;
+} */
+
+.index-block {
+    height: 550px;
+    width: 100%;
+    background-color: rgba(241, 239, 239, 1);
+}
+/* #CCDCEF */
+.index-block section {
+    padding-top: 5%;
+    padding-bottom: 8%;
+    width: 100%;
+}
+
+.index-container {
+    float: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.index-container h3 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    width: 70%;
+}
+
+.index-container p {
+    font-size: 18px
 }
