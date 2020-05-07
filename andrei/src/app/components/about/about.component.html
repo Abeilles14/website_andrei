@@ -13,7 +13,7 @@
     <section>
         <a name="home-about" id="home-about"></a>
         <h1 class="page-title" style="text-align:center" position="relative">About</h1>
-        <div class="about-text container">
+        <div class="container">
 
             <img src="/assets/images/prof1.jpg" alt="profile picture">
 
@@ -24,14 +24,13 @@
                 I have a passion for software development, embedded programming,
                 mountain running, and learning new random skills.
             </h3>
-            <hr>
+            <hr style="margin-left:0px;">
             <p style="font-size:18px">
                 I have always been fascinated by the combination of software, robotics,
                 and AI, and enjoy learning hardware concepts in class while exploring various
                 software applications in personal projects and design teams in order to
                 become a well-rounded engineer that would be of use in a versatile environmnent.
-                <br>
-                <br>
+                <br><br>
                 Being an avid hiker and mountain runner, I travel and compete in multiple mountain
                 obstacle races around the world. I enjoy exploring new technologies and programming
                 languages as well as paint some digital art or fiddle around on my electrical violin.
@@ -44,19 +43,25 @@
 
 <div class="index-block">
     <section>
-        <div class="index-container about-text">
+        <div class="index-container">
             <h1 style="font-size:25px;font-weight:bold">Index</h1>
-            <hr><br>
-            <a href="/"><h3>About</h3></a>
+            <hr>
+            <div *ngFor="let navItem of navItems">
+                <button style="padding:0px" type="button" class="btn btn-link" (click)="navTo(navItem)">
+                    <h3>{{navItem.name}}</h3>
+                </button>
+                <p>{{navItem.desc}}</p>
+            </div>
+            <!-- <button type="button" class="btn btn-link" (click)="navTo('About')"><h3>About</h3></button>
             <p>Here you are</p>
-            <a href="/projects"><h3>Projects</h3></a>
+            <button type="button" class="btn btn-link" (click)="navTo('Projects')"><h3>Projects</h3></button>
             <p>My personal and collaborative project showcase</p>
-            <a href="/documents"><h3>Files</h3></a>
+            <a href="documents"><h3>Files</h3></a>
             <p>My artwork and school notes and documents</p>
             <a href="resume"><h3>Resume</h3></a>
             <p>See my resume and work experience here</p>
             <a href="other"><h3>Other</h3></a>
-            <p>Mountain running adventures, Music, and Martial Arts</p>
+            <p>Mountain running adventures, Music, and Martial Arts</p> -->
         </div>
     </section>
 </div>

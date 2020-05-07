@@ -7,52 +7,33 @@ import { Router } from '@angular/router';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  navIndex: Array<any> = [
-    {
-      name: 'About',
-      rout: '/about'
-    },
-    {
-      name: 'Projects',
-      rout: '/projects'
-    },
-    {
-      name: 'Archives',
-      rout: '/documents'
-    },
-    {
-      name: 'Resume',
-      rout: '/resume'
-    },
-    {
-      name: 'Other',
-      rout: '/other'
-    }
-  ]
-
   navItems: Array<any> = [
     {
       name: 'About',
+      desc: 'Here you are',
       rout: '/about'
     },
     {
       name: 'Projects',
+      desc: 'My personal and collaborative project showcase',
       rout: '/projects'
     },
     {
       name: 'Archives',
+      desc: 'My school notes, documents, and artwork',
       rout: '/documents'
     },
     {
       name: 'Resume',
+      desc: 'See my resume and work experience here',
       rout: '/resume'
     },
     {
       name: 'Other',
+      desc: 'Mountain running adventures, Music, and Martial Arts',
       rout: '/other'
     }
   ]
-
 
   constructor(private router: Router) { }
 

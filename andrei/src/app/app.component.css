@@ -140,3 +140,31 @@ footer {
   background-color: white;
   height: 250px;
 }
+
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.left-foot {
+  float: left;
+  vertical-align: left;
+  text-align: left;
+  width: 30%;
+  margin-bottom: 60px;
+}
+
+.right-foot {
+  float: right;
+  vertical-align: right;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.bottom-foot {
+  float: bottom;
+  vertical-align: middle;
+}
