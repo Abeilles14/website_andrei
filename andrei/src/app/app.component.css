@@ -149,13 +149,9 @@ footer {
   margin-bottom: 30px;
 }
 
-.column {
-  float: left;
-  width: 50%;
-}
-
 .row {
   display: flex;
+  column-gap: 20px;
 }
 
 .column {
