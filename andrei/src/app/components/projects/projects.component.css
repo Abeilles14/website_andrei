@@ -1,0 +1,79 @@
+.intro {
+    /* background-color: rgba(241, 239, 239, 1); */
+    width: 100%;
+    height: 300px;
+    background-image: url('/assets/images/proj3.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro section {
+    text-align: left;
+    vertical-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    width: 70%;
+}
+
+section h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Dosis', sans-serif; */
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+section p {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Dosis', sans-serif; */
+    color: white;
+    line-height: 25px;
+}
+
+.proj  {
+    background-color: white;
+    height: 2000px;
+}
+
+.proj section {
+    text-align: left;
+    vertical-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    width: 70%;
+}
+
+.proj h2 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.proj p {
+    font-family: 'Dosis', sans-serif;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+    /*grow*/
+    /* border: 1px solid; */
+}
+
+@media (max-width: 768px) {
+    /*breakpoint*/
+    .row {
+        flex-direction: column;
+    }
+}
