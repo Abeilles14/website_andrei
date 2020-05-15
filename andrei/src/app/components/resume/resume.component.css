@@ -17,20 +17,13 @@
     width: 80%;
 }
 
-section h1 {
+.intro section h1 {
     font-family: Arial, Helvetica, sans-serif;
     /* font-family: 'Dosis', sans-serif; */
     color: white;
     font-size: 45px;
     font-weight: bold;
     margin-bottom: 25px;
-}
-
-section p {
-    font-family: Arial, Helvetica, sans-serif;
-    /* font-family: 'Dosis', sans-serif; */
-    color: white;
-    line-height: 25px;
 }
 
 .mat-stroked-button {
@@ -54,17 +47,45 @@ section p {
     background-color: rgba(158, 158, 158, 0.2);
 }
 
-.res {
+.res-block {
     background-color: white;
-    height: 800px;
+    height: 1200px;
+    width: 100%;
 }
 
-.res section {
+.res-block section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 80%;
     text-align: left;
     vertical-align: center;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 50px;
-    width: 80%;
+}
+
+.page-title {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    color: #5C6377;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+h1, h3, p {
+    font-family: 'Dosis', sans-serif;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row img {
+    margin-right: 25px;
+}
+
+.row p {
+    width: 67%;
 }
