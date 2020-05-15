@@ -14,7 +14,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 100px;
-    width: 70%;
+    width: 80%;
 }
 
 section h1 {
@@ -33,9 +33,9 @@ section p {
     line-height: 25px;
 }
 
-.proj  {
+.proj {
     background-color: white;
-    height: 2000px;
+    height: 2800px;
 }
 
 .proj section {
@@ -45,17 +45,36 @@ section p {
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
-    width: 70%;
+    width: 80%;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .proj h2 {
     font-family: 'Dosis', sans-serif;
-    font-size: 25px;
+    font-size: 32px;
     font-weight: bold;
 }
 
 .proj p {
     font-family: 'Dosis', sans-serif;
+}
+
+.proj img {
+    float: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 10px;
+    /* margin-bottom: 20px;
+    margin-left: 30px; */
+    /* max-width: 300px;
+    min-width: 200px; */
 }
 
 .row {
@@ -65,15 +84,55 @@ section p {
 
 .column {
     flex: 1;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
+    margin-right: 10px;
     /*grow*/
-    /* border: 1px solid; */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+    .proj section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 824px) {
     /*breakpoint*/
     .row {
         flex-direction: column;
+        margin-bottom: 0px;
     }
+    .proj {
+        height: 3000px;
+    }
+    .column {
+        margin-bottom: 15px;
+    }
+}
+
+.mat-stroked-button {
+    color: grey;
+    border-color: black;
+    outline: none;
+    margin-right: 5px;
+    padding: 0 15px;
+    line-height: 34px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    min-width: 64px;
+    border-radius: 4px;
+    overflow: visible;
+}
+
+.mat-stroked-button:hover {
+    background-color: rgba(158, 158, 158, 0.2);
+}
+
+.btn-row {
+    display: flex;
+    vertical-align: left;
+    margin-bottom: 10px;
 }

@@ -35,7 +35,7 @@
     font-size: 25px;
 }
 
-.titles a {
+.read {
     cursor: pointer;
     font-family: 'Lobster', cursive;
     color: whitesmoke;
@@ -45,9 +45,9 @@
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.5);
     padding: 3px 15px 3px 15px;
+    border-radius: 4px;
 }
-
-.titles a:hover {
+.read:hover {
     border-color: whitesmoke;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.9);
