@@ -49,7 +49,7 @@
 
 .res-block {
     background-color: white;
-    height: 1500px;
+    height: 1600px;
     width: 100%;
 }
 
@@ -101,16 +101,27 @@
     object-fit: contain;
 }
 
+.apps_logo {
+    width: 15%;
+    min-width: 100px;
+    margin-left: 90px;
+    margin-right: 110px;
+}
+
 @media screen and (max-width: 800px) {
     .res-block {
-        height: 2000px;
+        height: 2250px;
+    }
+    .content {
+        display: inline;
     }
     .content img {
-        position: relative;
-        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
     }
-    .content div h2, div h3, div p {
-        width: 100%;
-        vertical-align: middle;
+    .apps_logo {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
