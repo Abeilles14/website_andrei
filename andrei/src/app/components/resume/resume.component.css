@@ -101,11 +101,18 @@
     object-fit: contain;
 }
 
-.apps_logo {
+/* .appstrax {
     width: 15%;
     min-width: 100px;
     margin-left: 90px;
     margin-right: 110px;
+} */
+
+@media screen and (min-width: 800px) {
+    #appstrax img {
+        margin-left: 90px;
+        margin-right: 110px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -119,9 +126,5 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
-    }
-    .apps_logo {
-        margin-left: 0px;
-        margin-right: 0px;
     }
 }
