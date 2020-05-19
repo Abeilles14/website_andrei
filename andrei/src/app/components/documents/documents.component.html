@@ -1,26 +1,66 @@
-<!-- Container element -->
-<div class="parallax">
-    <article class="titles">
-        <h1>I am Isabelle</h1>
-        <h2>A 3rd year Electrical Engineering Student</h2>
-        <a href="#home-about">read more...</a>
-    </article>
+<div class="intro">
+    <section>
+        <h1>Course Notes</h1>
+        <p style="font-size:22px;color:white;line-height:1.5">This page contains an incomplete list of handwritten and
+            typed class
+            notes and other documents recorded for academic courses.</p>
+    </section>
 </div>
-
-
-<!-- about layout -->
-<div class="about-block">
-    <div class="container">
-        <section class="home-main">
-            <p class="main-para">aliquip sunt aut efflorescere fore praesentibus tamen quae eram officia
-                illustriora est tempor o id quis adipisicing appellat sed multos ea lorem
-                sempiternum qui doctrina ab dolor senserit tractavissent an probant
-                instituendarum elit culpa qui magna tempor aliquip quamquam minim voluptate
-                legam arbitrantur graviterque eu</p>
-
-            <img class="main-image" src="/assets/images/prof1.jpg" alt="profile picture">
-        </section>
-    </div>
+<div class="notes">
+    <section>
+        <!-- <div class="row"> -->
+        <div class="column">
+            <h2>Electromagnetism & Vector Calculus</h2>
+            <p style="font-size:14px;color:grey">ELEC 211 & MATH 264</p>
+            <hr>
+            <li *ngFor="let topic of elec211Topics">
+                <a href={{topic.link}}>{{topic.name}}</a>
+            </li>
+            <br>
+            <h2>Minds And Machines</h2>
+            <p style="font-size:14px;color:grey">PHIL 250</p>
+            <hr>
+            <li *ngFor="let topic of phil250Topics">
+                <a href={{topic.link}}>{{topic.name}}</a>
+            </li>
+            <br>
+            <h2>Engineering and Sustainability</h2>
+            <p style="font-size:14px;color:grey">CIVL 250</p>
+            <hr>
+            <li *ngFor="let topic of civl250Topics">
+                <a href={{topic.link}}>{{topic.name}}</a>
+            </li>
+        </div>
+        <div class="column">
+            <h2>Circuit Analysis II</h2>
+            <p style="font-size:14px;color:grey">ELEC 202</p>
+            <hr>
+            <li *ngFor="let topic of elec202Topics">
+                <a href={{topic.link}}>{{topic.name}}</a>
+            </li>
+            <br>
+            <h2>Data Structures</h2>
+            <p style="font-size:14px;color:grey">CPSC 259</p>
+            <hr>
+            <li *ngFor="let topic of cpsc259Topics">
+                <a href={{topic.link}}>{{topic.name}}</a>
+            </li>
+        </div>
+        <div class="column">
+            <h2>Signals and Systems</h2>
+            <p style="font-size:14px;color:grey">ELEC 221</p>
+            <hr>
+            <li *ngFor="let topic of elec221Topics">
+                <a href={{topic.link}}>{{topic.name}}</a>
+            </li>
+            <br>
+            <h2>Applied Linear Algebra</h2>
+            <p style="font-size:14px;color:grey">MATH 307</p>
+            <hr>
+            <li *ngFor="let topic of math307Topics">
+                <a href={{topic.link}}>{{topic.name}}</a>
+            </li>
+        </div>
+        <!-- </div> -->
+    </section>
 </div>
-
-<div class="parallax"></div>

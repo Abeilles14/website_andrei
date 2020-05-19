@@ -49,7 +49,7 @@
 
 .res-block {
     background-color: white;
-    height: 1600px;
+    height: 1900px;
     width: 100%;
 }
 
@@ -92,7 +92,7 @@
 
 .content li {
     padding: 10px 0 10px 20px;
-    text-indent: -1em;
+    text-indent: -1.4em;;
 }
 
 .content img {
@@ -115,9 +115,16 @@
     }
 }
 
+@media screen and (max-width: 1029px) {
+    .res-block {
+        height: 2100px;
+    }
+
+}
+
 @media screen and (max-width: 800px) {
     .res-block {
-        height: 2250px;
+        height: 2880px;
     }
     .content {
         display: inline;
