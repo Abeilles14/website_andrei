@@ -16,6 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,20 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
     MatListModule,
     MatToolbarModule,
     Ng2PageScrollModule,
+    RouterModule.forRoot(
+			[
+        { path: 'about', component: AboutComponent },
+        { path: 'documents', component: DocumentsComponent },
+        { path: 'other', component: OtherComponent },
+        { path: 'projects', component: ProjectsComponent },
+        { path: 'resume', component: ResumeComponent }
+      ],
+			{
+				scrollPositionRestoration: "enabled",
+				anchorScrolling: "enabled",
+				enableTracing: false
+			}
+		)
   ],
   providers: [],
   bootstrap: [AppComponent]
