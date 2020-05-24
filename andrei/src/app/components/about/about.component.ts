@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -38,9 +38,20 @@ export class AboutComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    let top = document.querySelector("#top");
+    if (top) {
+      top.scrollIntoView();
+    }
   }
 
   navTo(page) {
     this.router.navigate([page.rout]);
+  }
+
+  onClick() {
+    let about = document.querySelector("#home-about");
+    if (about) {
+      about.scrollIntoView();
+    }
   }
 }

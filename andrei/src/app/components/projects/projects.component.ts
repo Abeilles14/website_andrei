@@ -12,6 +12,10 @@ export class ProjectsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    let top = document.querySelector("#top");
+    if (top) {
+      top.scrollIntoView();
+    }
   }
 
 }

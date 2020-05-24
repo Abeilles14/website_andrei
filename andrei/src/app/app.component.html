@@ -25,14 +25,14 @@
 <!-- side nav toggle-->
 <mat-sidenav-container fxFlexFill class="fixed-top">
     <mat-sidenav style="width: 260px;" #sidenav class="bg-nav" position="end">
-        <ul>.</ul>
-        <ul>.</ul>
-        <mat-nav-list class="sidebar">
-            <ul *ngFor="let navItem of navItems">
-                <button type="button" class="sidebarbtn"
-                    (click)="navTo(navItem); sidenav.toggle()">{{navItem.name}}</button>
-            </ul>
-        </mat-nav-list>
+        <div style="padding-top:60px">
+            <mat-nav-list class="sidebar">
+                <ul *ngFor="let navItem of navItems">
+                    <button type="button" class="sidebarbtn"
+                        (click)="navTo(navItem); sidenav.toggle()">{{navItem.name}}</button>
+                </ul>
+            </mat-nav-list>
+        </div>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
         <router-outlet></router-outlet>
@@ -50,7 +50,8 @@
                         <p> Feel free to contact me and say hello or give me feedback!<br>
                             Email: isabelle.andre@alumni.ubc.ca<br>
                             Github: <a href="https://github.com/Abeilles14">https://github.com/Abeilles14</a><br>
-                            LinkedIn: <a href="https://www.linkedin.com/in/isabelle-andre-ia/">https://www.linkedin.com/in/isabelle-andre-ia/</a>
+                            LinkedIn: <a
+                                href="https://www.linkedin.com/in/isabelle-andre-ia/">https://www.linkedin.com/in/isabelle-andre-ia/</a>
                         </p>
                     </div>
                 </div>

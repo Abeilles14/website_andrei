@@ -14,7 +14,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    Ng2PageScrollModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
