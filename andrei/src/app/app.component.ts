@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'andrei';
 
   navItems: Array<any> = [
@@ -32,13 +32,13 @@ export class AppComponent implements OnInit{
     }
   ]
 
-  constructor(private router: Router){ }
-
-  ngOnInit(){
+  constructor(private router: Router) { }
+  
+  ngOnInit() {
     this.router.navigate(['/about']);
   }
 
-  navTo(page){
+  navTo(page) {
     this.router.navigate([page.rout]);
   }
 }
