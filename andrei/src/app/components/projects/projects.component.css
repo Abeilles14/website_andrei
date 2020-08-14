@@ -96,13 +96,12 @@ section p {
 }
 
 @media (max-width: 824px) {
-    /*breakpoint*/
+    .proj {
+        height: 4000px;
+    }
     .row {
         flex-direction: column;
         margin-bottom: 0px;
-    }
-    .proj {
-        height: 4000px;
     }
     .column {
         margin-bottom: 15px;

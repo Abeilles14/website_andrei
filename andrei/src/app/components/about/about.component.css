@@ -28,6 +28,7 @@
     font-size: 60px;
     font-weight: bold;
     padding-bottom: 10px;
+    line-height: 60px;
 }
 
 .titles h2 {
@@ -98,6 +99,9 @@ h1, h3, p {
 @media screen and (max-width: 767px) {
     .container hr {
         width: 50%;
+    }
+    .about-block {
+        height: 850px;
     }
 }
 
