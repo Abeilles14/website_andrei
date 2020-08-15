@@ -46,6 +46,13 @@
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
             <br>
+            <h2>Intermediate Japanese</h2>
+            <p style="font-size:14px;color:grey">JAPN 201, Self-Study</p>
+            <hr>
+            <li *ngFor="let topic of japn201Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
+            <br>
         </div>
         <div class="column">
             <h2>Signals and Systems</h2>
@@ -62,7 +69,13 @@
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
             <br>
+            <h2>Elementary Japanese</h2>
+            <p style="font-size:14px;color:grey">JAPN 101, Self-Study</p>
+            <hr>
+            <li *ngFor="let topic of japn101Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
+            <br>
         </div>
-        <!-- </div> -->
     </section>
 </div>

@@ -363,6 +363,99 @@ export class DocumentsComponent implements OnInit {
     }
   ]
 
+  japn101Topics: Array<any> = [
+    {
+      name: 'Chapter 1 - Counting, Time, Age',
+      link: 'assets/notes/japn101/1_count_time_age.pdf'
+    },
+    {
+      name: 'Chapter 2 - This, That, Here, There, Currency',
+      link: 'assets/notes/japn101/2_this_that_here_there_money.pdf'
+    },
+    {
+      name: 'Chapter 3 - Conjugation, Particles',
+      link: 'assets/notes/japn101/3_conjugation_particles.pdf'
+    },
+    {
+      name: 'Chapter 4 - Past Tense, Location, Date',
+      link: 'assets/notes/japn101/4_past_tense_location_date.pdf'
+    },
+    {
+      name: 'Chapter 5 - i-adjectives, na-adjectives',
+      link: 'assets/notes/japn101/5_i-adj_na-adj.pdf'
+    },
+    {
+      name: 'Chapter 6 - te-form, Multiple Activities',
+      link: 'assets/notes/japn101/6_te-form_multiple_activities.pdf'
+    },
+    {
+      name: 'Chapter 7 - Describing, te-form Sentences',
+      link: 'assets/notes/japn101/7_describing_te-form_sentences.pdf'
+    },
+    {
+      name: 'Chapter 8 - Short Form, Informal Speech',
+      link: 'assets/notes/japn101/8_short_form_informal_speech.pdf'
+    },
+    {
+      name: 'Chapter 9 - Past Tense, Short Form, Qualifying Nouns',
+      link: 'assets/notes/japn101/9_past_tense_short_form_qualifying_nouns.pdf'
+    },
+    {
+      name: 'Chapter 10 - Comparison, Planning, Becoming',
+      link: 'assets/notes/japn101/10_comparison_planning_become.pdf'
+    },
+    {
+      name: 'Chapter 11 - Aspirations, Listing, Examples',
+      link: 'assets/notes/japn101/11_aspirations_listing_examples.pdf'
+    },
+    {
+      name: 'Chapter 12 - Explaining, Reasons, Necessity',
+      link: 'assets/notes/japn101/12_explaining_reason_necessity.pdf'
+    }
+  ]
+
+  japn201Topics: Array<any> = [
+    {
+      name: 'Chapter 13 - Potential Verbs',
+      link: 'assets/notes/japn201/13_potential_verbs.pdf'
+    },
+    {
+      name: 'Chapter 14 - Possibility, Advice',
+      link: 'assets/notes/japn201/14_possibility_advice.pdf'
+    },
+    {
+      name: 'Chapter 15 - Volition Form, Perparing',
+      link: 'assets/notes/japn201/15_volitional_form_preparing.pdf'
+    },
+    {
+      name: 'Chapter 16 - Giving, Receiving, Time',
+      link: 'assets/notes/japn201/16_give_receive_time'
+    },
+    {
+      name: 'Chapter 17 - Reporting, If This Occurs',
+      link: 'assets/notes/japn201/17_reporting_if.pdf'
+    },
+    {
+      name: 'Chapter 19 - Honorific Form, Respectful Advice',
+      link: 'assets/notes/japn201/19_honorific_respectful_advice.pdf'
+    },
+    {
+      name: 'Chapter 20 - Modest Expressions, Humble Expressions',
+      link: 'assets/notes/japn201/20_modest_humble_expressions.pdf'
+    },
+    {
+      name: 'Chapter 21 - Passive Sentences, Want Something to Occur',
+      link: 'assets/notes/japn201/21_passive_sentences_want.pdf'
+    },
+    {
+      name: 'Chapter 22 - Causative Sentences, Giving Orders',
+      link: 'assets/notes/japn201/22_causative_sentences_order.pdf'
+    },
+    {
+      name: 'Chapter 23 - Causative-Passive Sentences, Making a Habit',
+      link: 'assets/notes/japn201/23_causative-passive_sentences_habit.pdf'
+    },
+  ]
 
   constructor() { }
 
