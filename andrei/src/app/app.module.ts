@@ -16,6 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
+import { PhotoGridComponent } from './components/photo-grid/photo-grid.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RouterModule } from '@angular/router';
     AboutComponent,
     ResumeComponent,
     DocumentsComponent,
-    OtherComponent
+    OtherComponent,
+    PhotoGridComponent
   ],
   imports: [
     BrowserModule,

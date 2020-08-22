@@ -1,6 +1,21 @@
 <div id="top" class="intro">
     <section>
         <h1>Other</h1>
-        <p style="font-size:18px;color:white;line-height:1.5">Page under construction, will be back shortly!</p>
+        <p style="font-size:18px;color:white;line-height:1.5">
+            Occasional thoughts, adventures, and photography dump when I do something
+            interesting or utterly ridiculous.</p>
     </section>
 </div>
+<div class="index-block">
+    <section>
+        <div class="index-container">
+            <h1 style="font-size:25px;font-weight:bold">Other Things I Do</h1>
+            <hr>
+            <div *ngFor="let navItem of navItems">
+                <button style="padding:0px" type="button" class="btn btn-link" (click)="navTo(navItem)">
+                    <h3>{{navItem.name}}</h3>
+                </button>
+                <p>{{navItem.desc}}</p>
+            </div>
+        </div>
+    </section>

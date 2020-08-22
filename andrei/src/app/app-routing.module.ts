@@ -5,6 +5,7 @@ import { DocumentsComponent } from './components/documents/documents.component';
 import { OtherComponent } from './components/other/other.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { PhotoGridComponent } from './components/photo-grid/photo-grid.component';
 
 const routes: Routes = [
   { path: '', redirectTo:'about', pathMatch:'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'documents', component: DocumentsComponent },
   { path: 'other', component: OtherComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'resume', component: ResumeComponent }
+  { path: 'resume', component: ResumeComponent },
+  { path: 'photo-grid', component: PhotoGridComponent }
 ];
 
 @NgModule({
