@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "personal website backend and google api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abeilles14/website_andrei.git"
+  },
+  "author": "Isabelle Andre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abeilles14/website_andrei/issues"
+  },
+  "homepage": "https://github.com/Abeilles14/website_andrei#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "googleapis": "^39.2.0",
+    "http": "0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
