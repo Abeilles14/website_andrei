@@ -1,11 +1,12 @@
+// middleware
 // start and run server
 const express = require('express')
 const app = express();
 const http = require('http');
-var indexRoute = require('./api/index');
+var indexRoute = require('./routes/index');
 const PORT = process.env.PORT || 3000;
 
-//Body Parser Middlware:
+// Body Parser Middlware:
 app.use(express.json());
 app.use(express.urlencoded({ extended: false })); // TODO: is this necessary?
 
