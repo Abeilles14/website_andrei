@@ -1,8 +1,9 @@
 // start and run server
-const PORT = process.env.PORT || 3000;
-const http = require('http');
+const express = require('express')
 const app = express();
-var indexRoute = require('../api/index');
+const http = require('http');
+var indexRoute = require('./api/index');
+const PORT = process.env.PORT || 3000;
 
 //Body Parser Middlware:
 app.use(express.json());
@@ -15,8 +16,6 @@ app.use(function(req, res, next) {
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     next();
 });  
-
-app.use('/', indexRoute);
 
 app.listen(PORT,()=>console.log(`Server running on port ${PORT}`));
 
