@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
     },
     {
       name: 'Other',
-      rout: '/other'
+      rout: '/photo-grid'
     }
   ]
 

@@ -20,7 +20,7 @@ export class AboutComponent implements OnInit {
     },
     {
       name: 'Archives',
-      desc: 'My school notes, documents, and artwork',
+      desc: 'My school notes, documents, and lab work',
       rout: '/documents'
     },
     {
@@ -30,7 +30,7 @@ export class AboutComponent implements OnInit {
     },
     {
       name: 'Other',
-      desc: 'Mountain running adventures, Music, and Martial Arts',
+      desc: 'My Photography Grid of Random Adventures',
       rout: '/other'
     }
   ]

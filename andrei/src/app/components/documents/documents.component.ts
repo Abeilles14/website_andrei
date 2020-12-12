@@ -6,6 +6,87 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./documents.component.css']
 })
 export class DocumentsComponent implements OnInit {
+  elec333Topics: Array<any> = [
+  ]
+  
+  elec315Topics: Array<any> = [
+    {
+      name: 'Photons, Waves, Tunneling, Particle Boxes',
+      link: 'assets/notes/elec315/1_photons_waves.pdf'
+    },
+    {
+      name: 'Atoms and Solids',
+      link: 'assets/notes/elec315/2_atoms_solids.pdf'
+    },
+    {
+      name: 'Carriers in Semiconductors',
+      link: 'assets/notes/elec315/3_carriers_in_semiconductors.pdf'
+    },
+    {
+      name: 'Density of States and Fermi Levels',
+      link: 'assets/notes/elec315/4_densityofstates_fermilevels.pdf'
+    },
+    {
+      name: 'Dielectrics',
+      link: 'assets/notes/elec315/5_dielectrics.pdf'
+    },
+    {
+      name: 'Piezoelectrics',
+      link: 'assets/notes/elec315/6_piezoelectrics.pdf'
+    },
+    {
+      name: 'Magnetic Materials',
+      link: 'assets/notes/elec315/7_magnetic_materials.pdf'
+    }
+  ]
+
+  elec342Topics: Array<any> = [
+    {
+      name: 'Magnetic Circuits',
+      link: 'assets/notes/elec342/1_magnetic_circuits.pdf'
+    },
+    {
+      name: 'Transformers',
+      link: 'assets/notes/elec342/2_transformers.pdf'
+    },
+    {
+      name: 'Electromechanical Energy Conversion',
+      link: 'assets/notes/elec342/3_electromechanical_energy_conversion.pdf'
+    },
+    {
+      name: 'DC Machines',
+      link: 'assets/notes/elec342/4_DC_machines.pdf'
+    },
+    {
+      name: 'AC Induction Machines',
+      link: 'assets/notes/elec342/5_AC_induction_machines.pdf'
+    },
+    {
+      name: 'Synchronous Machines',
+      link: 'assets/notes/elec342/6_synchronous_machines.pdf'
+    },
+    {
+      name: 'Lab 1 - AC/DC Circuits and Basic Measurements',
+      link: 'assets/notes/elec342/lab1.pdf'
+    },
+    {
+      name: 'Lab 2 - AC Transformers',
+      link: 'assets/notes/elec342/lab2.pdf'
+    },
+    {
+      name: 'Lab 3 - Permanent Magnet Brushed DC Motor',
+      link: 'assets/notes/elec342/lab3.pdf'
+    },
+    {
+      name: 'Lab 4 - AC Squirrel-Cage Induction Motor',
+      link: 'assets/notes/elec342/lab4.pdf'
+    },
+    {
+      name: 'Lab 5 - Synchronous Machine and Car Alternator',
+      link: 'assets/notes/elec342/lab5.pdf'
+    },
+  ]
+
   elec211Topics: Array<any> = [
     {
       name: 'Work and Potential',
@@ -21,7 +102,7 @@ export class DocumentsComponent implements OnInit {
     },
     {
       name: 'Midterm 2 Content',
-      link: 'assets/notes/elec211/2.2_Midterm_2_Content'
+      link: 'assets/notes/elec211/2.2_Midterm_2_Content.pdf'
     },
     {
       name: 'Math 264 - Flux',
@@ -79,6 +160,21 @@ export class DocumentsComponent implements OnInit {
       name: 'Inductors',
       link: 'assets/notes/elec211/13._inductors.pdf'
     }
+  ]
+
+  cpen211Topics: Array<any> = [
+  ]
+
+  elec201Topics: Array<any> = [
+  ]
+
+  math253Topics: Array<any> = [
+  ]
+
+  math256Topics: Array<any> = [
+  ]
+
+  elec291Topics: Array<any> = [
   ]
 
   elec202Topics: Array<any> = [

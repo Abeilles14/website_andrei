@@ -9,6 +9,13 @@
     <section>
         <!-- <div class="row"> -->
         <div class="column">
+            <h2>Electromechanical Energy Conversion</h2>
+            <p style="font-size:14px;color:grey">ELEC 342</p>
+            <hr>
+            <li *ngFor="let topic of elec342Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
+            <br>
             <h2>Electromagnetism & Vector Calculus</h2>
             <p style="font-size:14px;color:grey">ELEC 211 & MATH 264</p>
             <hr>
@@ -16,10 +23,24 @@
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
             <br>
+            <h2>Electrical Design Studio</h2>
+            <p style="font-size:14px;color:grey">ELEC 291</p>
+            <hr>
+            <li *ngFor="let topic of elec291Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
+            <br>
             <h2>Minds And Machines</h2>
             <p style="font-size:14px;color:grey">PHIL 250</p>
             <hr>
             <li *ngFor="let topic of phil250Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
+            <br>
+            <h2>Multivariable Calculus</h2>
+            <p style="font-size:14px;color:grey">MATH 253</p>
+            <hr>
+            <li *ngFor="let topic of math253Topics">
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
             <br>
@@ -32,10 +53,24 @@
             <br>
         </div>
         <div class="column">
+            <h2>Electronic Materials and Devices</h2>
+            <p style="font-size:14px;color:grey">ELEC 315</p>
+            <hr>
+            <li *ngFor="let topic of elec315Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
+            <br>
             <h2>Circuit Analysis II</h2>
             <p style="font-size:14px;color:grey">ELEC 202</p>
             <hr>
             <li *ngFor="let topic of elec202Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
+            <br>
+            <h2>Circuit Analysis I</h2>
+            <p style="font-size:14px;color:grey">ELEC 201</p>
+            <hr>
+            <li *ngFor="let topic of elec201Topics">
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
             <br>
@@ -46,6 +81,12 @@
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
             <br>
+            <h2>Differential Calculus</h2>
+            <p style="font-size:14px;color:grey">MATH 256</p>
+            <hr>
+            <li *ngFor="let topic of math256Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
             <h2>Intermediate Japanese</h2>
             <p style="font-size:14px;color:grey">JAPN 201, Self-Study</p>
             <hr>
@@ -55,6 +96,13 @@
             <br>
         </div>
         <div class="column">
+            <h2>System Software Engineering</h2>
+            <p style="font-size:14px;color:grey">CPEN 333</p>
+            <hr>
+            <li *ngFor="let topic of elec333Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
+            <br>
             <h2>Signals and Systems</h2>
             <p style="font-size:14px;color:grey">ELEC 221</p>
             <hr>
@@ -62,6 +110,12 @@
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
             <br>
+            <h2>Introduction to Microcontrollers</h2>
+            <p style="font-size:14px;color:grey">CPEN 211</p>
+            <hr>
+            <li *ngFor="let topic of cpen211Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
             <h2>Applied Linear Algebra</h2>
             <p style="font-size:14px;color:grey">MATH 307</p>
             <hr>
