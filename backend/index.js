@@ -2,23 +2,41 @@
 // start and run server
 const express = require('express');
 const app = express();
-const http = require('http');
 
-const { photosRoute } = require('./routes/index');
+const photosRoutes = require('./routes/photos-routes');
+
+const allowedOrigins = ['localhost:8080', 'localhost:3000', 'https://iandre.ca/photo-grid']
 
 const PORT = process.env.PORT || 3000;
 
 // Body Parser Middlware:
 app.use(express.json());
-app.use(express.urlencoded({ extended: false })); // TODO: is this necessary?
+// parse requrests of content-type: 
+app.use(express.urlencoded({ extended: false }));
 
 // Cross-Origin Middleware
 app.use(function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Content-Type, Accept, Authorization');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
-    next();
+    const origin = req.get('host');
+    if (allowedOrigins.includes(origin)) {
+        res.setHeader('Access-Control-Allow-Origin', origin)
+        res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
+        next()
+    } else {
+        console.log('origin: ', req.get('host'))
+
+        return res.status(403).json({
+            status: 403,
+            message: 'Access Denied: API access for personal website use only at https://iandre.ca',
+        })
+      }
 });  
+
+app.get('/', (req, res) =>
+  res.send('photo-grid backend :)')
+);
+
+// routes
+app.use("/gallery", photosRoutes);
 
 app.listen(PORT,()=>console.log(`Server running on port ${PORT}`));
 

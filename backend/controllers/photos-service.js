@@ -9,23 +9,25 @@ module.exports = class PhotosService {
 
     getAlbum(albumID) {
         return new Promise((resolve, reject) => {
-            axios.get(`https://photos.app.goo.gl/${albumID}`, (err, res) => {
-                if (err) {
-                    reject(err);
+            axios.get(`https://photos.app.goo.gl/${albumID}`)
+            .then(res => {
+                const headerDate = res.headers && res.headers.date ? res.headers.date : 'no response date';
+                console.log('Status Code:', res.status);
+                console.log('Date in Response header:', headerDate);
+              
+                // extract photos using regex
+                const links = new Set()
+                let match
+                while (match = regex.exec(res.data)) {
+                    links.add(match[1])
                 }
-                resolve(res);
-            }).then((result) => {
-                return extractPhotos(result.data);
+                
+                resolve(Array.from(links));
+
+            }).catch(err => {
+                console.log('Error: ', err.message);
+                reject(err);
             });
         });
-    }
-
-    extractPhotos(content) {
-        const links = new Set()
-        let match
-        while (match = regex.exec(content)) {
-            links.add(match[1])
-        } 
-        return Array.from(links)
     }
 }
