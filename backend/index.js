@@ -1,9 +1,11 @@
 // middleware
 // start and run server
-const express = require('express')
+const express = require('express');
 const app = express();
 const http = require('http');
-var indexRoute = require('./routes/index');
+
+const { photosRoute } = require('./routes/index');
+
 const PORT = process.env.PORT || 3000;
 
 // Body Parser Middlware:

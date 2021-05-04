@@ -15,5 +15,4 @@ export class PhotoGridComponent implements OnInit {
       top.scrollIntoView();
     }
   }
-
 }
