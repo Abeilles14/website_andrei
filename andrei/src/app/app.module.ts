@@ -17,6 +17,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
 import { PhotoGridComponent } from './components/photo-grid/photo-grid.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { PhotoGridComponent } from './components/photo-grid/photo-grid.component
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    HttpClientModule,
     LayoutModule,
     MatButtonModule,
     MatSidenavModule,
