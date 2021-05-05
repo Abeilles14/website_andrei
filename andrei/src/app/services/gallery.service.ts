@@ -8,7 +8,6 @@ import { of } from 'rxjs/internal/observable/of';
   providedIn: 'root'
 })
 export class GalleryService {
-  //public images: Array<string> = [];
 
   constructor(private http: HttpClient) { }
 

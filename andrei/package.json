@@ -23,14 +23,15 @@
     "@angular/platform-browser-dynamic": "^9.1.9",
     "@angular/router": "^9.1.9",
     "bootstrap": "^4.5.0",
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.0",
+    "nanogallery2": "^3.0.5",
     "ng2-page-scroll": "^4.0.0-beta.12",
     "rxjs": "~6.5.4",
     "tslib": "^1.13.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.901.7",
+    "@angular-devkit/build-angular": "^0.1000.8",
     "@angular/cli": "^9.1.7",
     "@angular/compiler-cli": "^9.1.9",
     "@angular/language-service": "^9.1.9",

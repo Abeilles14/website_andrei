@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery'
 
 @Component({
   selector: 'app-photo-grid',
@@ -14,5 +15,13 @@ export class PhotoGridComponent implements OnInit {
     if (top) {
       top.scrollIntoView();
     }
+
+  // $("#nanogallery2").nanogallery2( {
+  //     items: [
+  //       { src: '../../../../assets/projects/ios.PNG', srct: '/assets/projects/ios.PNG', title: 'Alt 1' },
+  //       { src: '/assets/projects/ios.PNG', srct: '/assets/projects/ios.PNG', title: 'Alt 2' },
+  //       { src: '/assets/projects/ios.PNG', srct: '/assets/projects/ios.PNG', title: 'Alt 3' }
+  //     ]
+  //   });
   }
 }
