@@ -1,7 +1,7 @@
 <div id="top" class="intro">
     <section>
         <h1 style="margin-bottom:45px">Resume</h1>
-        <a href="assets/resume/resume_oct2020.pdf" target="_blank">
+        <a href="assets/resume/resume_apr2021.pdf" target="_blank">
             <button mat-button class="mat-stroked-button" style="color:white;font-size:18px;outline:none">
                 <mat-icon style="color:white">file_download</mat-icon>
                 Download PDF
@@ -15,11 +15,29 @@
         <h1 class="page-title" style="text-align:center;margin-bottom:68px">Work Experience</h1>
         <div>
             <div class="content">
+                <img src="/assets/resume/ubc_apsc.png" style="width:30%;min-width:290px;">
+                <div class="text">
+                    <h2>UBC Robotics and Controls Lab</h2>
+                    <p style="font-size:22px;font-weight:bold">Undergraduate Research Assistant</p>
+                    <p style="font-size:16px;">December 2020 - Present</p>
+                    <p>
+                        <li>Developed a task planning software for trilateral tasks using da Vinci
+                            Research Kit robotic surgery platform, ROS, and Coppelia simulation</li>
+                        <li>Added a 3rd arm to the 2 arm da Vinci srugical robot using a state
+                            machine running a tri-lateral pick-and-place task</li>
+                        <li>Use computer vision libraries to locate objects and coordinate 
+                            the arms to accomplish the task in an efficient manner</li>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div class="content">
                 <img src="/assets/resume/teradici_logo.png" style="width:30%;min-width:290px;">
                 <div class="text">
                     <h2>Teradici</h2>
-                    <p style="font-size:22px;font-weight:bold">Associate Software Engineer</p>
-                    <p style="font-size:16px;">May 2020 - Present</p>
+                    <p style="font-size:22px;font-weight:bold">Associate Software Developer</p>
+                    <p style="font-size:16px;">May 2020 - December 2020</p>
                     <p>
                         <li>Expanded and improved the build system required to generate a PCoIP Client for Windows, Mac,
                             Linux, and mobile platforms</li>
@@ -37,24 +55,6 @@
             <hr>
             <br>
             <div class="content">
-                <img src="/assets/resume/rapids_logo.png" style="width:30%;min-width:300px">
-                <div>
-                    <h2>UBC Rapids</h2>
-                    <p style="font-size:22px;font-weight:bold">Co-Captain</p>
-                    <p style="font-size:16px;">September 2018 - Present</p>
-                    <p>
-                        <li>Managing a team of 20+ students to build and fix 3D printers, and
-                            optimize the firmware and printing mechanisms</li>
-                        <li>Create and lead a new software team researching and optimizing the
-                            Marlin firmware while setting new goals and milestones</li>
-                        <li>Write clear documentation while collaborating with teammates to
-                            configure and test firmware for custom printer parameters</li>
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <br>
-            <div class="content">
                 <img src="/assets/resume/launchpad_logo.jpg" style="width:30%;min-width:300px">
                 <div>
                     <h2>UBC Launchpad</h2>
@@ -62,11 +62,13 @@
                     <p style="font-size:16px;">September 2020 - Present</p>
                     <p>
                         <li>Developed an iOS mobile application to track and classify a group’s
-                            expenses with notifications using Swift, Node.js, and mySQL</li>
-                        <li>Built application infrastructure and API endpoints, and configured
-                            docker containers with a mySQL database for the backend</li>
+                            expenses with notifications using Swift, Node.js, and SQL</li>
+                        <li>Built application infrastructure and backend API, and containerized
+                            the backend with a mySQL database using Docker</li>
                         <li>Created SQL stored procedures for each API endpoint and implemented 
                             group expense splitting feature for each user</li>
+                        <li>Developed the frontend's Activity feed in Swift to display 
+                            most recent payements and transfers completed</li>
                     </p>
                 </div>
             </div>
@@ -79,10 +81,31 @@
                     <p style="font-size:22px;font-weight:bold">Systems Software Engineer</p>
                     <p style="font-size:16px;">September 2020 - Present</p>
                     <p>
+                        <li>Developed a QR scanning Python program using OpenCV to display
+                            outputs on the screen, then soldered and tested the rover’s FPV
+                            camera system with the QR scanning program</li>
                         <li>Developed a python flask API obtaining telemetry for data
                             processing and computing the speed and heading of an aircraft</li>
                         <li>Created API endpoints processing other aircrafts’ telemetry at
                             intervals from an interoperability server to avoid collisions</li>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div class="content">
+                <img src="/assets/resume/rapids_logo.png" style="width:30%;min-width:300px">
+                <div>
+                    <h2>UBC Rapids</h2>
+                    <p style="font-size:22px;font-weight:bold">Co-Captain</p>
+                    <p style="font-size:16px;">September 2018 - Present</p>
+                    <p>
+                        <li>Managed a team of 20+ students contributing to our Consulting, 3D
+                            printing, and 3D printer construction and maintenance subteams</li>
+                        <li>Build and maintain 3D printers while and optimizing the firmware
+                            and printing mechanisms</li>
+                        <li>Lead the design and construction of a new compact and portable 3D
+                            printer including CAD design, firmware, and electronic parts </li>
                     </p>
                 </div>
             </div>

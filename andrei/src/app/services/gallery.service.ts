@@ -8,24 +8,37 @@ import { of } from 'rxjs/internal/observable/of';
   providedIn: 'root'
 })
 export class GalleryService {
+  public album: Array<[any, any, any]> = [];
 
   constructor(private http: HttpClient) { }
 
-  getAlbum(albumID: string): Observable<Array<[any, any, any]>> {
+  setAlbum(callbackAlbum, albumID: string){
     return this.http.get<Array<[any, any, any]>>(`http://localhost:3000/gallery/${albumID}`
-    ).pipe(
-      tap(_ => console.log('fetched album')),
-      catchError(this.handleError<Array<[any, any, any]>>('getAlbum', []))
-    );
+    ).subscribe((response) => {
+      Object.values(response).forEach((image) => {
+        this.album.push(image);
+        callbackAlbum(this.album);
+      });
+      console.log("http get all images successful");
+    });
+
+    // ).pipe(
+    //   tap(_ => console.log('fetched album')),
+    //   catchError(this.handleError<Array<[any, any, any]>>('getAlbum', []))
+    // );
   }
 
-  private handleError<T>(operation = 'operation', result?: T) {
-    return (error: any): Observable<T> => {
-      console.error(error); // log to console instead
-  
-      console.log(`${operation} failed: ${error.message}`);
-  
-      return of(result as T);
-    };
+  getAlbum(): Array<[any, any, any]>{
+    return this.album;
   }
+
+  // private handleError<T>(operation = 'operation', result?: T) {
+  //   return (error: any): Observable<T> => {
+  //     console.error(error); // log to console instead
+  
+  //     console.log(`${operation} failed: ${error.message}`);
+  
+  //     return of(result as T);
+  //   };
+  // }
 }

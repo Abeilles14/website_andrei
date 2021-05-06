@@ -31,7 +31,7 @@ export class AboutComponent implements OnInit {
     {
       name: 'Photography',
       desc: 'My Photography Grid of random shots and adventures',
-      rout: '/other'
+      rout: '/photo-grid'
     }
   ]
 

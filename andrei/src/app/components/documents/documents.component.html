@@ -7,7 +7,6 @@
 </div>
 <div class="notes">   
     <section>
-        <!-- <div class="row"> -->
         <div class="column">
             <h2>Systems and Control</h2>
             <p style="font-size:14px;color:grey">ELEC 341</p>
@@ -20,6 +19,13 @@
             <p style="font-size:14px;color:grey">CPEN 311</p>
             <hr>
             <li *ngFor="let topic of cpen311Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
+            <br>
+            <h2>Computer Networking</h2>
+            <p style="font-size:14px;color:grey">ELEC 331</p>
+            <hr>
+            <li *ngFor="let topic of elec331Topics">
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
             <br>
@@ -115,6 +121,7 @@
             <li *ngFor="let topic of math256Topics">
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
+            <br>
             <h2>Intermediate Japanese</h2>
             <p style="font-size:14px;color:grey">JAPN 201, Self-Study</p>
             <hr>
@@ -138,10 +145,10 @@
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
             <br>
-            <h2>Computer Networking</h2>
-            <p style="font-size:14px;color:grey">ELEC 331</p>
+            <h2>Introduction to Microcontrollers</h2>
+            <p style="font-size:14px;color:grey">CPEN 211</p>
             <hr>
-            <li *ngFor="let topic of elec331Topics">
+            <li *ngFor="let topic of cpen211Topics">
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
             <br>
@@ -152,12 +159,6 @@
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
             <br>
-            <h2>Introduction to Microcontrollers</h2>
-            <p style="font-size:14px;color:grey">CPEN 211</p>
-            <hr>
-            <li *ngFor="let topic of cpen211Topics">
-                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
-            </li>
             <h2>Applied Linear Algebra</h2>
             <p style="font-size:14px;color:grey">MATH 307</p>
             <hr>

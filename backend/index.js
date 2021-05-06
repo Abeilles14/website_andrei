@@ -5,7 +5,12 @@ const app = express();
 
 const photosRoutes = require('./routes/photos-routes');
 
-const allowedOrigins = ['localhost:8080', 'localhost:3000', 'https://iandre.ca/photo-grid']
+const allowedOrigins = [
+  'http://localhost:4200',
+  'http://localhost:3000',
+  'https://iandre.ca',
+  'https://iandre-website.web.app'
+]
 
 const PORT = process.env.PORT || 3000;
 
@@ -16,13 +21,14 @@ app.use(express.urlencoded({ extended: false }));
 
 // Cross-Origin Middleware
 app.use(function(req, res, next) {
-    const origin = req.get('host');
+    const origin = req.headers.origin;
+    
     if (allowedOrigins.includes(origin)) {
         res.setHeader('Access-Control-Allow-Origin', origin)
         res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
         next()
     } else {
-        console.log('origin: ', req.get('host'))
+        console.log('origin: ', origin);
 
         return res.status(403).json({
             status: 403,

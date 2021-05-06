@@ -30,7 +30,10 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/fonts/customfonts.css"
             ],
-            "scripts": ["./node_modules/jquery/dist/jquery.min.js"]
+            "scripts": [
+              "src/assets/scripts/jquery.min.js",
+              "src/assets/scripts/jquery.nanogallery2.js"
+            ]
           },
           "configurations": {
             "production": {

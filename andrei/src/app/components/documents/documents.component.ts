@@ -103,10 +103,10 @@ export class DocumentsComponent implements OnInit {
     },
     {
       name: 'Transmission Lines and Wave Guides',
-      link: 'assets/notes/elec311/exam_review'
+      link: 'assets/notes/elec311/exam_review.pdf'
     },
     {
-      name: 'Wave Reflection and Dispersion',
+      name: 'Exam Review',
       link: 'assets/notes/elec311/exam_review.pdf'
     },
   ]

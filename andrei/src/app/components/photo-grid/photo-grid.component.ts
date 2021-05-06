@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GalleryService } from '../../services/gallery.service';
-import * as $ from 'jquery'
+import * as $ from 'jquery';//'nanogallery2';
 
 @Component({
   selector: 'app-photo-grid',
@@ -8,45 +8,42 @@ import * as $ from 'jquery'
   styleUrls: ['./photo-grid.component.css']
 })
 export class PhotoGridComponent implements OnInit {
-  
-  items: any = [];  // got no time to spend on good coding conventions lol
+  album: Array<[any, any, any]> = [];  // got no time to spend on good coding conventions lol
   albumID: string = "sd5BgnnMtPdMnGZc8";
+  callbackAlbum = (album) => { this.album = album };
 
   constructor(private galleryService: GalleryService) { }
 
   ngOnInit(): void {
-    this.items = this.galleryService.getAlbum(this.albumID);
-    console.log("images retrieved");
+    // this.galleryService.setAlbum(this.callbackAlbum, this.albumID);
+    // this.album = this.galleryService.getAlbum();
+    // console.log("images retrieved");
 
-    let top = document.querySelector("#top");
-    if (top) {
-      top.scrollIntoView();
-    }
+    // let top = document.querySelector("#top");
+    // if (top) {
+    //   top.scrollIntoView();
+    //};
 
-    $("#my_nanogallery2").nanogallery2({
-      items: [{
-
-      }],
-      itemsBaseURL: "https://lh3.googleusercontent.com/",
-      locationHash: false,
-      thumbnailBorderVertical: 0,
-      thumbnailBorderHorizontal: 0,
-      thumbnailLabel: {
-        position: "overImageOnBottom"
-      },
-      thumbnailHoverEffect2: "imageScaleIn80|labelAppear75",
-      thumbnailAlignment: "center",
-      thumbnailOpenImage: true,
-      thumbnailWidth: "auto",
-      thumbnailHeight: 300
-    });
+    // (<any>$("#my_nanogallery2")).nanogallery2({
+    //   items: this.album,
+    //   itemsBaseURL: "https://lh3.googleusercontent.com/",
+    //   locationHash: false,
+    //   thumbnailBorderVertical: 0,
+    //   thumbnailBorderHorizontal: 0,
+    //   thumbnailLabel: {
+    //     position: "overImageOnBottom"
+    //   },
+    //   thumbnailHoverEffect2: "imageScaleIn80|labelAppear75",
+    //   thumbnailAlignment: "center",
+    //   thumbnailOpenImage: true,
+    //   thumbnailWidth: "auto",
+    //   thumbnailHeight: 300
+    // })
   }
 
-  // $(document).ready(function() {
-  //   $("#my_nanogallery2").nanogallery2({
-  //     items: [{
-
-  //     }],
+  // $("#my_nanogallery2").ready(function() {
+  //   (<any>$("#my_nanogallery2")).nanogallery2({
+  //     items: this.album,
   //     itemsBaseURL: "https://lh3.googleusercontent.com/",
   //     locationHash: false,
   //     thumbnailBorderVertical: 0,
@@ -59,5 +56,8 @@ export class PhotoGridComponent implements OnInit {
   //     thumbnailOpenImage: true,
   //     thumbnailWidth: "auto",
   //     thumbnailHeight: 300
+  //   })
   // });
 }
+
+
