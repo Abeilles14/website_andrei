@@ -16,10 +16,11 @@ module.exports = class PhotosService {
                 console.log('Date in Response header:', headerDate);
               
                 // extract photos using regex
+                // format array [{src, srct, title}]
                 const links = new Set()
-                let match
+                var match
                 while (match = regex.exec(res.data)) {
-                    links.add(match[1])
+                    links.add({src: match[1], srct: match[1], title: ""})
                 }
                 
                 resolve(Array.from(links));

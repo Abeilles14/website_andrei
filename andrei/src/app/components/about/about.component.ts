@@ -29,8 +29,8 @@ export class AboutComponent implements OnInit {
       rout: '/resume'
     },
     {
-      name: 'Other',
-      desc: 'My Photography Grid of Random Adventures',
+      name: 'Photography',
+      desc: 'My Photography Grid of random shots and adventures',
       rout: '/other'
     }
   ]

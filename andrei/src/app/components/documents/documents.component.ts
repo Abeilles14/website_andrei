@@ -6,7 +6,144 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./documents.component.css']
 })
 export class DocumentsComponent implements OnInit {
+  elec499Topics: Array<any> = [
+  ]
+
+  elec481Topics: Array<any> = [
+  ]
+
+  elec341Topics: Array<any> = [
+  ]
+
+  elec391Topics: Array<any> = [
+    {
+      name: 'Mini Project: Active Pendulum',
+      link: 'assets/notes/elec391/1_active_pendulum.pdf'
+    },
+    {
+      name: 'Final Project: Robotic Arm',
+      link: 'https://github.com/Abeilles14/Robotic-Arm'
+    },
+    {
+      name: 'Final Project: Mechanical Report',
+      link: 'assets/notes/elec391/2_mechanical_report.pdf'
+    },
+    {
+      name: 'Final Project: Electrical Report',
+      link: 'assets/notes/elec391/3_electrical_report.pdf'
+    },
+    {
+      name: 'Final Project: Controls Report',
+      link: 'assets/notes/elec391/3_controls_report.pdf'
+    },
+  ]
+  
+  cpen311Topics: Array<any> = [
+    {
+      name: 'Lab 1: Single Octave Frequency Organ',
+      link: 'assets/notes/elec391/1_active_pendulum.pdf'
+    },
+    {
+      name: 'Lab 2: Simple Ipod',
+      link: 'https://github.com/Abeilles14/Digital-Systems-Design/tree/main/lab2'
+    },
+    {
+      name: 'Lab 3: Adding a Strength Meter to the Simple Ipod',
+      link: 'https://github.com/Abeilles14/Digital-Systems-Design/tree/main/lab3'
+    },
+    {
+      name: 'Lab 4: RC4 Decryption',
+      link: 'https://github.com/Abeilles14/Digital-Systems-Design/tree/main/lab4'
+    },
+    {
+      name: 'Lab 5: Nios, Qsys, DDS, Modulations, and Clock Domains',
+      link: 'https://github.com/Abeilles14/Digital-Systems-Design/tree/main/lab5'
+    },
+    {
+      name: 'Final Project: Talking Calculator and Speech Synthesizer',
+      link: 'https://github.com/Abeilles14/Digital-Systems-Design/tree/main/final_project'
+    }
+  ]
+
+  elec331Topics: Array<any> = [
+    {
+      name: 'Computer Networks and Internet',
+      link: 'assets/notes/elec331/1_computer_networks_internet.pdf'
+    },
+    {
+      name: 'Application Layer',
+      link: 'assets/notes/elec331/2_application_layer.pdf'
+    },
+    {
+      name: 'Transport Layer',
+      link: 'assets/notes/elec331/3_transport_layer.pdf'
+    },
+    {
+      name: 'Network Layer Data Plane',
+      link: 'assets/notes/elec331/4_network_layer_data_plane.pdf'
+    },
+    {
+      name: 'Network Layer Control Plane',
+      link: 'assets/notes/elec331/5_network_layer_control_plane.pdf'
+    }
+  ]
+  
+  elec311Topics: Array<any> = [
+    {
+      name: 'Time Varying Fields and Maxwell Equations',
+      link: 'assets/notes/elec311/1_time_varying_fields_maxwell.pdf'
+    },
+    {
+      name: 'Uniform Plane Waves',
+      link: 'assets/notes/elec311/2_uniform_plane_wave.pdf'
+    },
+    {
+      name: 'Wave Reflection and Dispersion',
+      link: 'assets/notes/elec311/3_wave_reflection_and_dispersion.pdf'
+    },
+    {
+      name: 'Transmission Lines and Wave Guides',
+      link: 'assets/notes/elec311/exam_review'
+    },
+    {
+      name: 'Wave Reflection and Dispersion',
+      link: 'assets/notes/elec311/exam_review.pdf'
+    },
+  ]
+  
   elec333Topics: Array<any> = [
+    {
+      name: 'Lab 1: Object Oriented Programming',
+      link: 'https://github.com/Abeilles14/System-Software-Engineering-Labs'
+    },
+    {
+      name: 'Lab 2: Concurrency Part 1',
+      link: 'https://github.com/Abeilles14/System-Software-Engineering-Labs'
+    },
+    {
+      name: 'Lab 3: Concurrency Part 2',
+      link: 'https://github.com/Abeilles14/System-Software-Engineering-Labs'
+    },
+    {
+      name: 'Lab 4: Inter-Process Communication',
+      link: 'https://github.com/Abeilles14/System-Software-Engineering-Labs'
+    },
+    {
+      name: 'Lab 5: Thread and Process Synchronisation Communication',
+      link: 'https://github.com/Abeilles14/System-Software-Engineering-Labs'
+    },
+    {
+      name: 'Lab 6: Complex Synchronization',
+      link: 'https://github.com/Abeilles14/System-Software-Engineering-Labs'
+    },
+    {
+      name: 'Project 1: Duplex Elevator System Simulation',
+      link: 'https://github.com/Abeilles14/Elevator-System-Simulation'
+    },
+    {
+      name: 'Project 2: University System and Database',
+      link: 'https://github.com/Abeilles14/University-System-Database'
+    }
   ]
   
   elec315Topics: Array<any> = [
@@ -163,6 +300,50 @@ export class DocumentsComponent implements OnInit {
   ]
 
   cpen211Topics: Array<any> = [
+    {
+      name: 'Lab 1: Verilog Bitwise and Addition',
+      link: 'https://github.com/Abeilles14/Microcontrollers/tree/master/Lab%201'
+    },
+    {
+      name: 'Lab 2: Digital Circuit and Discrete Logic',
+      link: 'https://github.com/Abeilles14/Microcontrollers'
+    },
+    {
+      name: 'Lab 3: Tic-Tac_Toe Game',
+      link: 'https://github.com/Abeilles14/Microcontrollers/tree/master/Lab%203'
+    },
+    {
+      name: 'Lab 4: Clock State Machines',
+      link: 'https://github.com/Abeilles14/Microcontrollers/tree/master/Lab%204'
+    },
+    {
+      name: 'Lab 5: Datapath for State Machine',
+      link: 'https://github.com/Abeilles14/Microcontrollers/tree/master/Lab%205'
+    },
+    {
+      name: 'Lab 6: Controller and Instruction Register',
+      link: 'https://github.com/Abeilles14/Microcontrollers/tree/master/Lab%206'
+    },
+    {
+      name: 'Lab 7: Read-Write Memory RAM and I/O Communication',
+      link: 'https://github.com/Abeilles14/Microcontrollers/tree/master/Lab%207'
+    },
+    {
+      name: 'Lab 8: RISC Machine and Branching Instructions',
+      link: 'https://github.com/Abeilles14/Microcontrollers/tree/master/Lab%208'
+    },
+    {
+      name: 'Lab 9: ARM Assembly and Recursive Binary Search',
+      link: 'https://github.com/Abeilles14/Microcontrollers/tree/master/Lab%209'
+    },
+    {
+      name: 'Lab 10: I/O Devices and Interrupt Service Routines',
+      link: 'https://github.com/Abeilles14/Microcontrollers/tree/master/Lab%2010'
+    },
+    {
+      name: 'Lab 11: Program Performance and Cache',
+      link: 'https://github.com/Abeilles14/Microcontrollers/tree/master/Lab%2011'
+    }
   ]
 
   elec201Topics: Array<any> = [
@@ -175,6 +356,46 @@ export class DocumentsComponent implements OnInit {
   ]
 
   elec291Topics: Array<any> = [
+    {
+      name: 'Lab 1: Student Name on LCD',
+      link: 'https://github.com/Abeilles14/Electrical-Design-Studio-I'
+    },
+    {
+      name: 'Lab 2: Alarm Clock',
+      link: 'https://github.com/Abeilles14/Electrical-Design-Studio-I'
+    },
+    {
+      name: 'Lab 3: SPI Temperature Meter',
+      link: 'https://github.com/Abeilles14/Electrical-Design-Studio-I'
+    },
+    {
+      name: 'Lab 4: Capacitance Meter and HR Monitor',
+      link: 'https://github.com/Abeilles14/Electrical-Design-Studio-I'
+    },
+    {
+      name: 'Lab 5: Phasor Voltmeter',
+      link: 'https://github.com/Abeilles14/Electrical-Design-Studio-I'
+    },
+    {
+      name: 'Lab 6: Motor Controller',
+      link: 'https://github.com/Abeilles14/Electrical-Design-Studio-I'
+    },
+    {
+      name: 'Project 1: Reflow Oven Controller',
+      link: 'https://github.com/Abeilles14/Project-1-Reflow-Oven-Controller'
+    },
+    {
+      name: 'Project 1: Report',
+      link: 'assets/notes/elec291/1_reflow_oven_controller.pdf'
+    },
+    {
+      name: 'Project 2: Coin Picking Robot',
+      link: 'https://github.com/Abeilles14/Project-2-Coin-Picking-Robot'
+    },
+    {
+      name: 'Project 2: Report',
+      link: 'assets/notes/elec291/2_coin_picking_robot.pdf'
+    },
   ]
 
   elec202Topics: Array<any> = [

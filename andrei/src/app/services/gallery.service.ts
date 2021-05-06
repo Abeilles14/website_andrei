@@ -11,11 +11,11 @@ export class GalleryService {
 
   constructor(private http: HttpClient) { }
 
-  getAlbum(albumID: string): Observable<string[]> {
-    return this.http.get<string[]>(`http://localhost:3000/gallery/${albumID}`
+  getAlbum(albumID: string): Observable<Array<[any, any, any]>> {
+    return this.http.get<Array<[any, any, any]>>(`http://localhost:3000/gallery/${albumID}`
     ).pipe(
       tap(_ => console.log('fetched album')),
-      catchError(this.handleError<string[]>('getAlbum', []))
+      catchError(this.handleError<Array<[any, any, any]>>('getAlbum', []))
     );
   }
 

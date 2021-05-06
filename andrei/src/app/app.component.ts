@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
       rout: '/resume'
     },
     {
-      name: 'Other',
+      name: 'Photo Grid',
       rout: '/photo-grid'
     }
   ]
