@@ -26,9 +26,19 @@ export class GalleryService {
     // );
   }
 
-  getAlbum(): Array<[any, any, any]>{
-    return this.album;
+  getAlbum(albumID: string){
+    return this.http.get<Array<[any, any, any]>>(`http://localhost:3000/gallery/${albumID}`
+    );
+
+    // ).pipe(
+    //   tap(_ => console.log('fetched album')),
+    //   catchError(this.handleError<Array<[any, any, any]>>('getAlbum', []))
+    // );
   }
+
+  // getAlbum(): Array<[any, any, any]>{
+  //   return this.album;
+  // }
 
   // private handleError<T>(operation = 'operation', result?: T) {
   //   return (error: any): Observable<T> => {
