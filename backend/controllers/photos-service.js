@@ -1,4 +1,5 @@
 const axios = require('axios');
+const Image = require('../model/image-model')
 
 // source: https://github.com/ValentinH/google-photos-api
 const regex = /\["(https:\/\/lh3\.googleusercontent\.com\/[a-zA-Z0-9\-_]*)"/g
@@ -17,10 +18,10 @@ module.exports = class PhotosService {
               
                 // extract photos using regex
                 // format array [{src, srct, title}]
-                const links = new Set()
-                var match
+                const links = new Set();
+                var match;
                 while (match = regex.exec(res.data)) {
-                    links.add({src: match[1], srct: match[1], title: ""})
+                    links.add({src: match[1], srct: match[1], title: ""});
                 }
                 
                 resolve(Array.from(links));

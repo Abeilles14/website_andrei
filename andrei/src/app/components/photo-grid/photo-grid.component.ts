@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GalleryService } from '../../services/gallery.service';
+import { Image } from '../../model/image';
 
 @Component({
   selector: 'app-photo-grid',
@@ -7,24 +8,23 @@ import { GalleryService } from '../../services/gallery.service';
   styleUrls: ['./photo-grid.component.css']
 })
 export class PhotoGridComponent implements OnInit {
-  album: Array<[any, any, any]> = [];  // got no time to spend on good coding conventions lol
+  album: Array<Image> = [];  // got no time to spend on good coding conventions lol
   albumID: string = "sd5BgnnMtPdMnGZc8";
   callbackAlbum = (album) => { this.album = album };
 
   constructor(private galleryService: GalleryService) { }
 
   ngOnInit(): void {
-    // this.galleryService.setAlbum(this.callbackAlbum, this.albumID);
-    // this.album = this.galleryService.getAlbum();
-    this.album = [];
+    this.galleryService.setAlbum(this.callbackAlbum, this.albumID);
+    this.album = this.galleryService.getAlbum();
 
-    this.galleryService.getAlbum(this.albumID
-      ).subscribe((response) => {
-        Object.values(response).forEach((image) => {
-          this.album.push(image);
-          //this.callbackAlbum(this.album);
-      });
-    });
+    // this.galleryService.getAlbum(this.albumID
+    //   ).subscribe((response) => {
+    //     Object.values(response).forEach((image: Image) => {
+    //       this.album.push(image);
+    //       //this.callbackAlbum(this.album);
+    //   });
+    // });
 
     console.log("images retrieved");
 

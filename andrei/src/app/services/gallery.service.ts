@@ -1,23 +1,27 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Image } from '../model/image';
 import { catchError, map, tap } from 'rxjs/operators';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GalleryService {
-  public album: Array<[any, any, any]> = [];
+  public album: Array<Image> = [];
 
   constructor(private http: HttpClient) { }
 
   setAlbum(callbackAlbum, albumID: string){
-    return this.http.get<Array<[any, any, any]>>(`http://localhost:3000/gallery/${albumID}`
+    return this.http.get<Array<Image>>(`http://localhost:3000/gallery/${albumID}`
     ).subscribe((response) => {
-      Object.values(response).forEach((image) => {
-        this.album.push(image);
+      this.album = [];
+      Object.values(response).forEach((img) => {
+        this.album.push(new Image(img['src'], img['srct'], img['title']));
         callbackAlbum(this.album);
       });
       console.log("http get all images successful");
+      console.log(this.album[0]);
     });
 
     // ).pipe(
@@ -26,27 +30,26 @@ export class GalleryService {
     // );
   }
 
-  getAlbum(albumID: string){
-    return this.http.get<Array<[any, any, any]>>(`http://localhost:3000/gallery/${albumID}`
-    );
+  // getAlbum(albumID: string){
+  //   return this.http.get<Array<Image>>(`http://localhost:3000/gallery/${albumID}`,
+  //   {responseType: 'json'})
+  //   .pipe(
+  //     tap(_ => console.log('fetched album', this.album[0])),
+  //     catchError(this.handleError<Array<Image>>('getAlbum', []))
+  //   );
+  // }
 
-    // ).pipe(
-    //   tap(_ => console.log('fetched album')),
-    //   catchError(this.handleError<Array<[any, any, any]>>('getAlbum', []))
-    // );
+  getAlbum(): Array<Image>{
+    return this.album;
   }
 
-  // getAlbum(): Array<[any, any, any]>{
-  //   return this.album;
-  // }
-
-  // private handleError<T>(operation = 'operation', result?: T) {
-  //   return (error: any): Observable<T> => {
-  //     console.error(error); // log to console instead
+  private handleError<T>(operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
+      console.error(error); // log to console instead
   
-  //     console.log(`${operation} failed: ${error.message}`);
+      console.log(`${operation} failed: ${error.message}`);
   
-  //     return of(result as T);
-  //   };
-  // }
+      return of(result as T);
+    };
+  }
 }
