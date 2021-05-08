@@ -32,7 +32,6 @@
             ],
             "scripts": [
               "src/assets/scripts/jquery.min.js",
-              "src/assets/scripts/jquery.nanogallery2.core.min.js",
               "src/assets/scripts/jquery.nanogallery2.js"
             ]
           },

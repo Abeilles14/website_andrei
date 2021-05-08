@@ -9,7 +9,11 @@ const allowedOrigins = [
   'http://localhost:4200',
   'http://localhost:3000',
   'https://iandre.ca',
-  'https://iandre-website.web.app'
+  'https://iandre-website.web.app',
+  'localhost:4200',
+  'localhost:3000',
+  'iandre.ca',
+  'iandre-website'
 ]
 
 const PORT = process.env.PORT || 3000;
@@ -21,14 +25,14 @@ app.use(express.urlencoded({ extended: false }));
 
 // Cross-Origin Middleware
 app.use(function(req, res, next) {
-    const origin = req.headers.origin;
+    const origin = req.headers.origin;//host;
     
     if (allowedOrigins.includes(origin)) {
         res.setHeader('Access-Control-Allow-Origin', origin)
         res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
         next()
     } else {
-        console.log('origin: ', origin);
+        console.log('Error accessing API at origin: ', origin);
 
         return res.status(403).json({
             status: 403,
