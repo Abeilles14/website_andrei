@@ -52,10 +52,10 @@ export class GalleryService {
   //   );
   // }
 
-  // getAlbum(): Array<Image>{
-  //   console.log("in service get: ", this.album[0]);
-  //   return this.album;
-  // }
+  getAlbum(): Array<Image>{
+    console.log("in service get: ", this.album[0]);
+    return this.album;
+  }
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {

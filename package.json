@@ -1,0 +1,27 @@
+{
+  "name": "website_andrei",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "dependencies": {
+    "-": "^0.0.1",
+    "axios": "^0.21.1",
+    "jquery": "^3.6.0",
+    "nanogallery2": "^3.0.5",
+    "save": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abeilles14/website_andrei.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abeilles14/website_andrei/issues"
+  },
+  "homepage": "https://github.com/Abeilles14/website_andrei#readme"
+}
