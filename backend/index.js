@@ -8,12 +8,10 @@ const photosRoutes = require('./routes/photos-routes');
 const allowedOrigins = [
   'http://localhost:4200',
   'http://localhost:3000',
+  'http://localhost:5000',
   'https://iandre.ca',
   'https://iandre-website.web.app',
-  'localhost:4200',
-  'localhost:3000',
-  'iandre.ca',
-  'iandre-website'
+  'https://iandre-website.herokuapp.com'
 ]
 
 const PORT = process.env.PORT || 3000;
