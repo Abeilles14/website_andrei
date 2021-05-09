@@ -2,7 +2,7 @@
   "name": "website_andrei",
   "version": "1.0.0",
   "description": "Personal Website",
-  "main": "index.js",
+  "main": "backend/index.js",
   "dependencies": {
     "-": "^0.0.1",
     "axios": "^0.21.1",
@@ -10,9 +10,12 @@
     "nanogallery2": "^3.0.5",
     "save": "^2.4.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ."
   },
   "repository": {
     "type": "git",
