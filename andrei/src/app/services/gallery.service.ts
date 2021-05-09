@@ -8,12 +8,14 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class GalleryService {
+  private localhost: string = "http://localhost:3000/gallery/";
+  private herokuhost: string = "https://iandre-website.herokuapp.com/gallery/";
   public album: Array<Image> = [];
 
   constructor(private http: HttpClient) { }
 
   setAlbum(callbackAlbum, albumID: string){
-    return this.http.get<Array<Image>>(`http://localhost:3000/gallery/${albumID}`
+    return this.http.get<Array<Image>>(this.herokuhost + albumID
     ).subscribe((response) => {
       this.album = [];
       Object.values(response).forEach((img) => {
