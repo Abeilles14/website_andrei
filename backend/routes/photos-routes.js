@@ -13,4 +13,13 @@ router.get('/:albumID', (req, res) => {
     });
   });
 
+  //albumID: string = "sd5BgnnMtPdMnGZc8";
+  router.get('/test/:albumID', (req, res) => {
+    photosServer.testAlbum(req.params.albumID).then(album => {
+        res.json(album);
+    }).catch(err => {
+        res.json(err);
+    });
+  });
+
 module.exports = router

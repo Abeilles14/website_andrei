@@ -32,4 +32,23 @@ module.exports = class PhotosService {
             });
         });
     }
+
+    //zW8tRqGapCmgBQEu7
+    //albumID: string = "sd5BgnnMtPdMnGZc8";
+    testAlbum(albumID) {
+        return new Promise((resolve, reject) => {
+            axios.get(`https://photos.app.goo.gl/${albumID}`)
+            .then(res => {
+                resolve(res);
+            }).catch(err => {
+                console.log('Error: ', err.message);
+                reject(err);
+            });
+        }); 
+    }
+}
+
+async function getAlbum(id) {
+    return axios.get(`https://photos.app.goo.gl/${id}`);
+
 }

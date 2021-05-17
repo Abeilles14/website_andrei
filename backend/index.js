@@ -18,26 +18,26 @@ const PORT = process.env.PORT || 3000;
 
 // Cross-Origin Middleware
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
+    // res.header("Access-Control-Allow-Origin", "*");
+    // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    // next();
     
-    //const origin = `${req.protocol}://${req.headers.host}`;
+    const origin = `${req.protocol}://${req.headers.host}`;
     //const origin = req.headers.origin;//host;
     
-    // if (allowedOrigins.includes(origin)) {
-    //     console.log('request from origin', origin);
-    //     res.setHeader('Access-Control-Allow-Origin', origin)
-    //     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
-    //     next()
-    // } else {
-    //     console.log('Error accessing API at origin: ', origin);
+    if (allowedOrigins.includes(origin)) {
+        console.log('request from origin', origin);
+        res.setHeader('Access-Control-Allow-Origin', origin)
+        res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
+        next()
+    } else {
+        console.log('Error accessing API at origin: ', origin);
 
-    //     return res.status(403).json({
-    //         status: 403,
-    //         message: 'Access Denied: API access for personal website use only at https://iandre.ca',
-    //     })
-    //   }
+        return res.status(403).json({
+            status: 403,
+            message: 'Access Denied: API access for personal website use only at https://iandre.ca',
+        })
+      }
 });  
 
 //Middleware function:
