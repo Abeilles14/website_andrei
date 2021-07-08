@@ -8,6 +8,13 @@
 <div class="notes">   
     <section>
         <div class="column">
+            <h2>Deep Learning</h2>
+            <p style="font-size:14px;color:grey">CPEN 400D</p>
+            <hr>
+            <li *ngFor="let topic of cpen400DTopics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
+            <br>
             <h2>Systems and Control</h2>
             <p style="font-size:14px;color:grey">ELEC 341</p>
             <hr>
@@ -131,6 +138,13 @@
             <br>
         </div>
         <div class="column">
+            <h2>Computer Vision</h2>
+            <p style="font-size:14px;color:grey">CPSC 425</p>
+            <hr>
+            <li *ngFor="let topic of cpsc425Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
+            <br>
             <h2>Engineering Economics</h2>
             <p style="font-size:14px;color:grey">ELEC 481</p>
             <hr>
