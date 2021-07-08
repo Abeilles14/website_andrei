@@ -72,7 +72,7 @@ export class DocumentsComponent implements OnInit {
     },
     {
       name: 'Final Project: Controls Report',
-      link: 'assets/notes/elec391/3_controls_report.pdf'
+      link: 'assets/notes/elec391/4_controls_report.pdf'
     },
   ]
   
