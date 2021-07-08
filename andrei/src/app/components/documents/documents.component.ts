@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./documents.component.css']
 })
 export class DocumentsComponent implements OnInit {
+  cpen400DTopics: Array<any> = [
+  ]
+
+  cpsc425Topics: Array<any> = [
+  ]
+
   elec499Topics: Array<any> = [
   ]
 
@@ -13,6 +19,38 @@ export class DocumentsComponent implements OnInit {
   ]
 
   elec341Topics: Array<any> = [
+    {
+      name: 'Root Locus',
+      link: 'assets/notes/elec341/1_root_locus.pdf'
+    },
+    {
+      name: 'Controller Design',
+      link: 'assets/notes/elec341/2_controller_design.pdf'
+    },
+    {
+      name: 'Lead-Lag Compensator Design',
+      link: 'assets/notes/elec341/3_lead-lag_compensator_design.pdf'
+    },
+    {
+      name: 'PID Controller Design',
+      link: 'assets/notes/elec341/4_PID_controller_design.pdf'
+    },
+    {
+      name: 'Frequency Response',
+      link: 'assets/notes/elec341/5_frequency_response.pdf'
+    },
+    {
+      name: 'Bode Plot',
+      link: 'assets/notes/elec341/6_bode_plot.pdf'
+    },
+    {
+      name: 'Nyquist Stability Criterion',
+      link: 'assets/notes/elec341/7_nyquist_stability_criterion.pdf'
+    },
+    {
+      name: 'Stability Margin Frequency Domain Specification',
+      link: 'assets/notes/elec341/8_stability_margin_frequency_domain_specification.pdf'
+    }
   ]
 
   elec391Topics: Array<any> = [
