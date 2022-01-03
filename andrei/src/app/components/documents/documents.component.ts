@@ -7,12 +7,61 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocumentsComponent implements OnInit {
   cpen400DTopics: Array<any> = [
-  ]
-
-  cpsc425Topics: Array<any> = [
+    {
+      name: 'Neural Networks',
+      link: 'assets/notes/cpen400d/neural_networks.pdf'
+    },
+    {
+      name: 'Convolutional Neural Networks',
+      link: 'assets/notes/cpen400d/convolutional_neural_networks.pdf'
+    },
+    {
+      name: 'CNN Architectures',
+      link: 'assets/notes/cpen400d/cnn_architectures.pdf'
+    },
+    {
+      name: 'Gradient Descent and Optimization',
+      link: 'assets/notes/cpen400d/gradient_descent_and_optimization.pdf'
+    },
+    {
+      name: 'RNN and Natural Language Processing',
+      link: 'assets/notes/cpen400d/rnn_and_natural_language_processing.pdf'
+    },
+    {
+      name: 'Assignment 1: Logistic Regression, Gradient Descent',
+      link: 'https://github.com/Abeilles14/Deep-Learning/blob/main/Assignment%201%20-%20Logistic%20Regression%2C%20Gradient%20Descent.ipynb'
+    },
+    {
+      name: 'Assignment 2: Neural Networks',
+      link: 'https://github.com/Abeilles14/Deep-Learning/blob/main/Assignment%202%20-%20Neural%20networks.ipynb'
+    },
+    {
+      name: 'Assignment 3: Deep Neural Networks',
+      link: 'https://github.com/Abeilles14/Deep-Learning/blob/main/Assignment%203%20-%20Deep%20Neural%20Networks.ipynb'
+    },
+    {
+      name: 'Assignment 4: Convolutional Neural Networks',
+      link: 'https://github.com/Abeilles14/Deep-Learning/blob/main/Assignment%204%20-%20Convolutional%20Neural%20Networks.ipynb'
+    },
+    {
+      name: 'Assignment 5: Optimization and Regularization',
+      link: 'https://github.com/Abeilles14/Deep-Learning/blob/main/Assignment%205%20-%20Optimization%20and%20Regularization.ipynb'
+    }
   ]
 
   elec499Topics: Array<any> = [
+    {
+      name: 'A Motion Planning and Velocity Collision Avoidance Framework for Bilateral Manipulation',
+      link: 'assets/notes/elec499/bachelors_thesis.pdf'
+    },
+    {
+      name: 'Video Demo Link',
+      link: 'https://youtu.be/wWmJCkLgELY'
+    },
+    {
+      name: 'Source Code',
+      link: 'https://github.com/Abeilles14/Velocity-Obstacle-and-Motion-Planning'
+    }
   ]
 
   elec481Topics: Array<any> = [
