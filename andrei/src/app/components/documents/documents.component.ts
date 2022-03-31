@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./documents.component.css']
 })
 export class DocumentsComponent implements OnInit {
+  elec301Topics: Array<any> = [
+  ]
+
+  stat321Topics: Array<any> = [
+  ]
+  
   cpen400DTopics: Array<any> = [
     {
       name: 'Neural Networks',
