@@ -7,9 +7,57 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocumentsComponent implements OnInit {
   elec301Topics: Array<any> = [
+    {
+      name: 'Project 1: Mathematical and Computer Tools',
+      link: 'assets/notes/elec301/project_1_mathematical_computer_tools.pdf'
+    },
+    {
+      name: 'Project 2: Biasing and the Common Emitter Amplifier',
+      link: 'assets/notes/elec301/project_2_biasing_common_emitter_amplifier.pdf'
+    },
+    {
+      name: 'Project 3: Multi-Transistor Amplifiers',
+      link: 'assets/notes/elec301/project_3_multi_transistor_amplifiers.pdf'
+    },
+    {
+      name: 'Project 4: Active Filters, Oscillators, and Feedback Amplifiers',
+      link: 'assets/notes/elec301/project_4_active_filters_oscillators_feedback_amplifiers.pdf'
+    }
   ]
 
   stat321Topics: Array<any> = [
+    {
+      name: '1. Conditional Probability and Bayes Rule',
+      link: 'assets/notes/stat321/1_conditional_probability_bayes_rule.pdf'
+    },
+    {
+      name: '2. MAP Estimation',
+      link: 'assets/notes/stat321/2_map_estimation.pdf'
+    },
+    {
+      name: '3. Conditional Expectation',
+      link: 'assets/notes/stat321/3_conditional_expectation.pdf'
+    },
+    {
+      name: '4. LMS estimation',
+      link: 'assets/notes/stat321/4_lms_estimation.pdf'
+    },
+    {
+      name: '5. Linear LMS Estimation',
+      link: 'assets/notes/stat321/5_linear_lms_estimation.pdf'
+    },
+    {
+      name: 'Assignment 4',
+      link: 'assets/notes/stat321/assignment_4.pdf'
+    },
+    {
+      name: 'Assignment 5',
+      link: 'assets/notes/stat321/assignment_5.pdf'
+    },
+    {
+      name: 'Assignment 6',
+      link: 'assets/notes/stat321/assignment_6.pdf'
+    },
   ]
   
   cpen400DTopics: Array<any> = [
@@ -68,9 +116,6 @@ export class DocumentsComponent implements OnInit {
       name: 'Source Code',
       link: 'https://github.com/Abeilles14/Velocity-Obstacle-and-Motion-Planning'
     }
-  ]
-
-  elec481Topics: Array<any> = [
   ]
 
   elec341Topics: Array<any> = [

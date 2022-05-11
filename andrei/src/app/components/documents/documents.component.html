@@ -8,17 +8,17 @@
 <div class="notes">   
     <section>
         <div class="column">
+            <h2>Electronic Circuits</h2>
+            <p style="font-size:14px;color:grey">ELEC 301</p>
+            <hr>
+            <li *ngFor="let topic of elec301Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
+            <br>
             <h2>Deep Learning</h2>
             <p style="font-size:14px;color:grey">CPEN 400D</p>
             <hr>
             <li *ngFor="let topic of cpen400DTopics">
-                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
-            </li>
-            <br>
-            <h2>Stochastic Signals & Systems</h2>
-            <p style="font-size:14px;color:grey">STAT 321</p>
-            <hr>
-            <li *ngFor="let topic of stat321Topics">
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
             <br>
@@ -145,10 +145,10 @@
             <br>
         </div>
         <div class="column">
-            <h2>Engineering Economics</h2>
-            <p style="font-size:14px;color:grey">ELEC 481</p>
+            <h2>Stochastic Signals and Systems</h2>
+            <p style="font-size:14px;color:grey">STAT 321</p>
             <hr>
-            <li *ngFor="let topic of elec481Topics">
+            <li *ngFor="let topic of stat321Topics">
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
             <br>
