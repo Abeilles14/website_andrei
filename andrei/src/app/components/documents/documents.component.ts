@@ -27,23 +27,23 @@ export class DocumentsComponent implements OnInit {
 
   stat321Topics: Array<any> = [
     {
-      name: '1. Conditional Probability and Bayes Rule',
+      name: 'Conditional Probability and Bayes Rule',
       link: 'assets/notes/stat321/1_conditional_probability_bayes_rule.pdf'
     },
     {
-      name: '2. MAP Estimation',
+      name: 'MAP Estimation',
       link: 'assets/notes/stat321/2_map_estimation.pdf'
     },
     {
-      name: '3. Conditional Expectation',
+      name: 'Conditional Expectation',
       link: 'assets/notes/stat321/3_conditional_expectation.pdf'
     },
     {
-      name: '4. LMS estimation',
+      name: 'LMS estimation',
       link: 'assets/notes/stat321/4_lms_estimation.pdf'
     },
     {
-      name: '5. Linear LMS Estimation',
+      name: 'Linear LMS Estimation',
       link: 'assets/notes/stat321/5_linear_lms_estimation.pdf'
     },
     {

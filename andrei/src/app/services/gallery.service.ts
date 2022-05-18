@@ -14,16 +14,24 @@ export class GalleryService {
 
   constructor(private http: HttpClient) { }
 
-  setAlbum(callbackAlbum, albumID: string){
-    return this.http.get<Array<Image>>(this.herokuhost + albumID
-    ).subscribe((response) => {
-      this.album = [];
-      Object.values(response).forEach((img) => {
-        this.album.push(new Image(img['src'], img['srct'], img['title']));
-        callbackAlbum(this.album);
-        console.log("in service set: ", this.album[0]);
+  setAlbum(callbackAlbum, callbackShowGallery, albumID: string) {
+    return new Promise<void>((res) => {
+      
+      this.http.get<Array<Image>>(this.herokuhost + albumID
+      ).subscribe((response) => {
+        this.album = [];
+
+        Object.values(response).forEach((img) => {
+          this.album.push(new Image(img['src'], img['srct'], img['title']));
+          callbackAlbum(this.album);
+          console.log("in service set: ", this.album[0]);
+        });
+
+        callbackShowGallery()
+        console.log("http get all images successful");
       });
-      console.log("http get all images successful");
+
+      res();
     });
 
     // ).pipe(
@@ -54,7 +62,7 @@ export class GalleryService {
   //   );
   // }
 
-  getAlbum(): Array<Image>{
+  getAlbum(): Image[]{
     console.log("in service get: ", this.album[0]);
     return this.album;
   }
