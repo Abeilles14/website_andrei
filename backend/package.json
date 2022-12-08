@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Abeilles14/website_andrei#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "googleapis": "^39.2.0",
     "http": "0.0.1-security"
   },
