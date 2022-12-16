@@ -15,6 +15,9 @@
             <h2>Computer Architecture</h2>
             <p style="font-size:14px;color:grey">CPEN 411</p>
             <hr>
+            <li *ngFor="let topic of cpen411Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
             <br>
             <h2>Electronic Circuits</h2>
             <p style="font-size:14px;color:grey">ELEC 301</p>
@@ -157,13 +160,16 @@
             <br>
         </div>
         <div class="column">
-            <h2>Advanced Digital VLSI Systems</h2>
-            <p style="font-size:14px;color:grey">ELEC 403</p>
+            <h2>Advanced Topics in VLSI</h2>
+            <p style="font-size:14px;color:grey">ELEC 502</p>
             <hr>
             <br>
             <h2>Introduction to VLSI Systems</h2>
             <p style="font-size:14px;color:grey">ELEC 402</p>
             <hr>
+            <li *ngFor="let topic of elec402Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
             <br>
             <h2>Analog CMOS Integrated Circuit Design</h2>
             <p style="font-size:14px;color:grey">ELEC 401</p>

@@ -6,6 +6,44 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./documents.component.css']
 })
 export class DocumentsComponent implements OnInit {
+  cpen411Topics: Array<any> = [
+    {
+      name: 'Project 2: High-Performing Cache Replacement Policies',
+      link: 'assets/notes/cpen411/2_cache.pdf'
+    },
+    {
+      name: 'Project 3: Architectural Simulator and Code Optimization',
+      link: 'assets/notes/cpen411/3_matmul.pdf'
+    },
+    {
+      name: 'Project 4: Branch Predictor Implementation',
+      link: 'assets/notes/cpen411/4_branch.pdf'
+    }
+  ]
+
+  elec402Topics: Array<any> = [
+    {
+      name: 'Project 1: DNS Lookup Verilog FSM',
+      link: 'assets/notes/elec402/1_fsm.pdf'
+    },
+    {
+      name: 'Project 2: Synthesized Verilog',
+      link: 'assets/notes/elec402/2_synthesized_verilog.pdf'
+    },
+    {
+      name: 'Project 3: MOS Transistors & Cadence Simulations',
+      link: 'assets/notes/elec402/3_mos_transistor.pdf'
+    },
+    {
+      name: 'Project 4: NAND3 Layout & Logic Function',
+      link: 'assets/notes/elec402/4_nand3.pdf'
+    },
+    {
+      name: 'Project 5: Place and Route & Domino Logic',
+      link: 'assets/notes/elec402/5_pnr_domino.pdf'
+    }
+  ]
+  
   elec301Topics: Array<any> = [
     {
       name: 'Project 1: Mathematical and Computer Tools',
