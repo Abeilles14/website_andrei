@@ -6,6 +6,70 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./documents.component.css']
 })
 export class DocumentsComponent implements OnInit {
+  elec491Topics: Array<any> = [
+    {
+      name: 'Capstone Project Deliverables',
+      link: 'assets/notes/elec491/doc_deliberables.pdf'
+    },
+    {
+      name: 'Capstone Project Requirements',
+      link: 'assets/notes/elec491/doc_requirements.pdf'
+    },
+    {
+      name: 'Capstone Project Product Design - Restricted',
+      link: 'assets/notes/elec491/doc_design_restricted.pdf'
+    },
+    {
+      name: 'Capstone Project Verification & Validation',
+      link: 'assets/notes/elec491/doc_verif_valid.pdf'
+    },
+    {
+      name: 'Capstone Project Final Presentation',
+      link: 'assets/notes/elec491/final_presentation.pdf'
+    },
+    {
+      name: 'Capstone Project Poster',
+      link: 'assets/notes/elec491/poster.pdf'
+    },
+    {
+      name: 'Capstone Project Video',
+      link: 'https://youtu.be/kj6lKM943pA'
+    },
+    {
+      name: 'Capstone Project GUI README',
+      link: 'assets/notes/elec491/README_GUI.pdf'
+    },
+    {
+      name: 'Capstone Project MCU README',
+      link: 'assets/notes/elec491/README_MCU.pdf'
+    },
+    {
+      name: 'Capstone Project FPGA README',
+      link: 'assets/notes/elec491/README_FPGA.pdf'
+    },
+    {
+      name: 'Capstone Project PCB README',
+      link: 'assets/notes/elec491/README_PCB.pdf'
+    }
+  ]
+  elec502Topics: Array<any> = [
+    {
+      name: 'Paper Presentation: Project Brainwave',
+      link: 'assets/notes/elec502/final_pres.pdf'
+    }
+  ]
+  cpen412Topics: Array<any> = [
+  ]
+  elec403Topics: Array<any> = [
+    {
+      name: 'Design, Analysis, and Simulation of a Highspeed I/O Link',
+      link: 'assets/notes/elec403/ELEC403_Final_Report.pdf'
+    },
+    {
+      name: 'Logical Effort Assignment',
+      link: 'assets/notes/elec403/assignment.pdf'
+    }
+  ]
   cpen411Topics: Array<any> = [
     {
       name: 'Project 2: High-Performing Cache Replacement Policies',

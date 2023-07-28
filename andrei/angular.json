@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "andrei"
+  "defaultProject": "andrei",
+  "cli": {
+    "analytics": false
+  }
 }

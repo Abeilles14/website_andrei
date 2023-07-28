@@ -50,10 +50,11 @@ import { HttpClientModule } from '@angular/common/http';
         { path: 'resume', component: ResumeComponent }
       ],
 			{
-				scrollPositionRestoration: "enabled",
-				anchorScrolling: "enabled",
-				enableTracing: false
-			}
+    scrollPositionRestoration: "enabled",
+    anchorScrolling: "enabled",
+    enableTracing: false,
+    relativeLinkResolution: 'legacy'
+}
 		)
   ],
   providers: [],

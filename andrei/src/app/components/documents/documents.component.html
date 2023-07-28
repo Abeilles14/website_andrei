@@ -8,14 +8,24 @@
 <div class="notes">   
     <section>
         <div class="column">
-            <h2>Microcomputer Systems Design</h2>
-            <p style="font-size:14px;color:grey">CPEN 412</p>
+            <h2>Advanced VLSI</h2>
+            <p style="font-size:14px;color:grey">ELEC 403</p>
             <hr>
+            <li *ngFor="let topic of elec403Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
             <br>
             <h2>Computer Architecture</h2>
             <p style="font-size:14px;color:grey">CPEN 411</p>
             <hr>
             <li *ngFor="let topic of cpen411Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
+            <br>
+            <h2>Microcomputer Systems Design</h2>
+            <p style="font-size:14px;color:grey">CPEN 412</p>
+            <hr>
+            <li *ngFor="let topic of cpen412Topics">
                 <a href={{topic.link}} target="_blank">{{topic.name}}</a>
             </li>
             <br>
@@ -91,9 +101,12 @@
             <br>
         </div>
         <div class="column">
-            <h2>Capstone Project</h2>
-            <p style="font-size:14px;color:grey">ELEC 491</p>
+            <h2>Capstone Project: Avionics Integration Testbench</h2>
+            <p style="font-size:14px;color:grey">ELEC 491 - Awarded ECE Faculty Award 2023</p>
             <hr>
+            <li *ngFor="let topic of elec491Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
             <br>
             <h2>Bachelor's Thesis</h2>
             <p style="font-size:14px;color:grey">ELEC 499</p>
@@ -163,6 +176,9 @@
             <h2>Advanced Topics in VLSI</h2>
             <p style="font-size:14px;color:grey">ELEC 502</p>
             <hr>
+            <li *ngFor="let topic of elec502Topics">
+                <a href={{topic.link}} target="_blank">{{topic.name}}</a>
+            </li>
             <br>
             <h2>Introduction to VLSI Systems</h2>
             <p style="font-size:14px;color:grey">ELEC 402</p>
