@@ -9,7 +9,7 @@ export class DocumentsComponent implements OnInit {
   elec491Topics: Array<any> = [
     {
       name: 'Capstone Project Deliverables',
-      link: 'assets/notes/elec491/doc_deliberables.pdf'
+      link: 'assets/notes/elec491/doc_deliverables.pdf'
     },
     {
       name: 'Capstone Project Requirements',
