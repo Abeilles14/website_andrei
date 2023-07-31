@@ -17,19 +17,15 @@ const allowedOrigins = [
 const PORT = process.env.PORT || 3000;
 
 // Cross-Origin Middleware
-app.use(function(req, res, next) {
-    // res.header("Access-Control-Allow-Origin", "*");
-    // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    // next();
-    
+app.use((req, res, next) => {
     const origin = `${req.protocol}://${req.headers.host}`;
-    //const origin = req.headers.origin;//host;
     
     if (allowedOrigins.includes(origin)) {
-        console.log('request from origin', origin);
-        res.setHeader('Access-Control-Allow-Origin', origin)
-        res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
-        next()
+        console.log('backend:: request from origin', origin);
+        // res.setHeader('Access-Control-Allow-Origin', origin);
+        res.setHeader('Access-Control-Allow-Origin', '*');  // allow all
+        res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+        next();
     } else {
         console.log('Error accessing API at origin: ', origin);
 
