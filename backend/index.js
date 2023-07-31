@@ -42,6 +42,7 @@ app.use(function(req, res, next) {
 
 //Middleware function:
 const logger = (req, res, next) => {
+  console.log('full request link: ')
   console.log(`${req.protocol}://${req.get('host')}${req.originalUrl}`);
   next();
 }
@@ -53,9 +54,9 @@ app.use(express.json());
 // parse requrests of content-type: 
 app.use(express.urlencoded({ extended: false }));
 
-app.get('/', (req, res) =>
-  res.send('photo-grid backend :)')
-);
+app.get('/', (req, res) => {
+  res.send('photo-grid backend :)');
+});
 
 // routes
 app.use("/gallery", photosRoutes);

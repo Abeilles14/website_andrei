@@ -17,7 +17,8 @@ export class GalleryService {
   setAlbum(callbackAlbum, callbackShowGallery, albumID: string) {
     return new Promise<void>((res) => {
       
-      this.http.get<Array<Image>>(this.herokuhost + albumID
+      this.http.get<Array<Image>>(this.localhost + albumID
+      // this.http.get<Array<Image>>(this.herokuhost + albumID
       ).subscribe((response) => {
         this.album = [];
 

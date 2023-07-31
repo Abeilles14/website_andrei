@@ -8,8 +8,9 @@ import { Image } from '../../model/image';
   styleUrls: ['./photo-grid.component.css']
 })
 export class PhotoGridComponent implements OnInit {
-  album: Array<Image> = [];  // got no time to spend on good coding conventions lol
-  albumID: string = "sd5BgnnMtPdMnGZc8";
+  album: Array<Image> = [];
+  albumID: string = "g1SWLdaYe6fp5qg56";    // part of shortened link obtained by sharing album
+  // prev albumID sd5BgnnMtPdMnGZc8
 
   constructor(private galleryService: GalleryService) { }
 
