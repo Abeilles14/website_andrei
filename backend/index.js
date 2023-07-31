@@ -11,7 +11,9 @@ const allowedOrigins = [
   'http://localhost:5000',
   'https://iandre.ca',
   'https://iandre-website.web.app',
-  'https://iandre-website.herokuapp.com'
+  // 'https://iandre-website.herokuapp.com',
+  'http://dull-plum-chinchilla-hose.cyclic.app',
+  'http://iandre-backend.cyclic.app'
 ]
 
 const PORT = process.env.PORT || 3000;
@@ -22,8 +24,8 @@ app.use((req, res, next) => {
     
     if (allowedOrigins.includes(origin)) {
         console.log('backend:: request from origin', origin);
+        res.setHeader('Access-Control-Allow-Origin', '*');  // FOR TESTING PURPOSES WITH LOCALHOST
         // res.setHeader('Access-Control-Allow-Origin', origin);
-        res.setHeader('Access-Control-Allow-Origin', '*');  // allow all
         res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
         next();
     } else {
@@ -31,7 +33,7 @@ app.use((req, res, next) => {
 
         return res.status(403).json({
             status: 403,
-            message: 'Access Denied: API access for personal website use only at https://iandre.ca',
+            message: 'Access Denied: Error accessing API at origin ' + origin + '. API access for personal website use only at https://iandre.ca',
         })
       }
 });  
