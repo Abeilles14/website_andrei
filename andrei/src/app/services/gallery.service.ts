@@ -8,8 +8,9 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class GalleryService {
-  private localhost: string = "http://localhost:3000/gallery/";
-  private herokuhost: string = "https://iandre-website.herokuapp.com/gallery/";
+  private localhost: string = 'http://localhost:3000/gallery/';
+  private herokuhost: string = 'https://iandre-website.herokuapp.com/gallery/';
+  private cyclichost: string = 'https://iandre-backend.cyclic.app';
   public album: Array<Image> = [];
 
   constructor(private http: HttpClient) { }
@@ -17,7 +18,7 @@ export class GalleryService {
   setAlbum(callbackAlbum, callbackShowGallery, albumID: string) {
     return new Promise<void>((res) => {
       
-      this.http.get<Array<Image>>(this.localhost + albumID
+      this.http.get<Array<Image>>(this.cyclichost + albumID
       // this.http.get<Array<Image>>(this.herokuhost + albumID
       ).subscribe((response) => {
         this.album = [];

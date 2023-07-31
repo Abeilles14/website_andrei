@@ -11,7 +11,9 @@ const allowedOrigins = [
   'http://localhost:5000',
   'https://iandre.ca',
   'https://iandre-website.web.app',
-  'https://iandre-website.herokuapp.com'
+  'https://iandre-website.herokuapp.com',
+  'https://dull-plum-chinchilla-hose.cyclic.app/',
+  'https://iandre-backend.cyclic.app',
 ]
 
 const PORT = process.env.PORT || 3000;
